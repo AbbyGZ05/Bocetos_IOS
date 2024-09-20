@@ -13,9 +13,9 @@ class Generador_De_Citas{
         citas_creadas = []
     }
     
-    func agregar_cita(quienDijo:String, queDijo: String){
-        var cita_generada = cita(quienLoDijo:queDijo, QueDijo: queDijo)
+   /*/ func agregar_cita(quienDijo:String, queDijo: String){
+        var cita_generada = cita( quienLoDijo:quien_lo_dijo, QueDijo:que_dijo)
         
         citas_creadas.append(cita_generada)
-    }
+    }*/
 }
