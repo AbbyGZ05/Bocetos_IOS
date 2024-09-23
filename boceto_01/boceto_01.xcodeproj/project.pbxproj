@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB3FB2B52CA1BFA2008A40D4 /* ControladorCitas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3FB2B42CA1BFA2008A40D4 /* ControladorCitas.swift */; };
 		FB6F28592C9B2BB400F5A6E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6F28582C9B2BB400F5A6E6 /* AppDelegate.swift */; };
 		FB6F285B2C9B2BB400F5A6E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6F285A2C9B2BB400F5A6E6 /* SceneDelegate.swift */; };
 		FB6F285D2C9B2BB400F5A6E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6F285C2C9B2BB400F5A6E6 /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB3FB2B42CA1BFA2008A40D4 /* ControladorCitas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorCitas.swift; sourceTree = "<group>"; };
 		FB6F28552C9B2BB400F5A6E6 /* boceto_01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = boceto_01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB6F28582C9B2BB400F5A6E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB6F285A2C9B2BB400F5A6E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB3FB2B32CA1BF14008A40D4 /* Controlador_de_vistas */ = {
+			isa = PBXGroup;
+			children = (
+				FB3FB2B42CA1BFA2008A40D4 /* ControladorCitas.swift */,
+			);
+			path = Controlador_de_vistas;
+			sourceTree = "<group>";
+		};
 		FB6F284C2C9B2BB400F5A6E6 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +113,7 @@
 		FB6F28572C9B2BB400F5A6E6 /* boceto_01 */ = {
 			isa = PBXGroup;
 			children = (
+				FB3FB2B32CA1BF14008A40D4 /* Controlador_de_vistas */,
 				FB6F288B2C9B362000F5A6E6 /* Controlador */,
 				FB6F28882C9B358E00F5A6E6 /* modelo */,
 				FB6F28582C9B2BB400F5A6E6 /* AppDelegate.swift */,
@@ -284,6 +295,7 @@
 				FB6F28592C9B2BB400F5A6E6 /* AppDelegate.swift in Sources */,
 				FB6F288F2C9B36E300F5A6E6 /* generador_de_citas.swift in Sources */,
 				FB6F288D2C9B364900F5A6E6 /* Cita.swift in Sources */,
+				FB3FB2B52CA1BFA2008A40D4 /* ControladorCitas.swift in Sources */,
 				FB6F285B2C9B2BB400F5A6E6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

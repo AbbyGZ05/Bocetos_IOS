@@ -11,8 +11,9 @@ struct cita{
     var nombre:String
     var texto:String
 
-    init(quien_Lo_dijo:String, que_dijo:String){
-        nombre = quien_Lo_dijo
+    init(quien_lo_dijo:String, que_dijo:String){
+        nombre = quien_lo_dijo
         texto = que_dijo
     }
 }
+
