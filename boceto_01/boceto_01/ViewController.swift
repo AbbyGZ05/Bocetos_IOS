@@ -9,16 +9,19 @@ import UIKit
 
 class ViewController: UIViewController {
     
-
-    @IBSegueAction func al_abrir_la_pantalla(_ coder: NSCoder) -> ControladorCitas? {
-        return ControladorCitas(muro_texo: "pio", de_quien:
-            "pato", coder: coder)
-    }
+    var citaParEnviar: cita = cita(quien_lo_dijo: "Pato", que_dijo: "pio pio")
+    var citas_disponibles : Generador_De_Citas = Generador_De_Citas()
 
     override func viewDidLoad() {
+        citas_disponibles.generar_citas_falsas()
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    @IBSegueAction func al_abrir_la_pantalla(_ coder: NSCoder) -> ControladorCitas? {
+        return ControladorCitas(cita_para_citar: citas_disponibles.obtener_cita_aleatoria(), coder: coder)
+    }
+
+
 
 
 }

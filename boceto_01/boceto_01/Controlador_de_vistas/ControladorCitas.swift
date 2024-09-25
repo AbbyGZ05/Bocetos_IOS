@@ -11,21 +11,18 @@ class ControladorCitas: UIViewController {
     
     @IBOutlet weak var NombreDeQuienLoDijo: UILabel!
     @IBOutlet weak var QueDijoMuroTexto: UILabel!
+
+    var cita_actual: cita
     
-    var muro_de_texto: String
-    var quie_lo_dijo: String
     
     required init? (coder: NSCoder){
-        self.muro_de_texto = ""
-        self.quie_lo_dijo = ""
+        self.cita_actual = cita(quien_lo_dijo: "Desarrollador", que_dijo: "Reportalo yaaaaa")
         super.init(coder: coder)
         print("Error estas bien wey")
     }
     
-    init ?(muro_texo:String, de_quien:String, coder:NSCoder){
-        self.muro_de_texto = muro_texo
-        self.quie_lo_dijo = de_quien
-        
+    init ?(cita_para_citar: cita, coder:NSCoder){
+        self.cita_actual = cita_para_citar
         super.init(coder: coder)
     }
     
@@ -36,7 +33,7 @@ class ControladorCitas: UIViewController {
         inicializar_pantalla()
     }
     func inicializar_pantalla(){
-        NombreDeQuienLoDijo.text = self.quie_lo_dijo
-        QueDijoMuroTexto.text = self.muro_de_texto
+        NombreDeQuienLoDijo.text = cita_actual.nombre
+        QueDijoMuroTexto.text = cita_actual.texto
     }
 }

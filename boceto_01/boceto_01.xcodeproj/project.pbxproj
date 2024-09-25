@@ -19,6 +19,7 @@
 		FB6F287C2C9B2BB500F5A6E6 /* boceto_01UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6F287B2C9B2BB500F5A6E6 /* boceto_01UITestsLaunchTests.swift */; };
 		FB6F288D2C9B364900F5A6E6 /* Cita.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6F288C2C9B364900F5A6E6 /* Cita.swift */; };
 		FB6F288F2C9B36E300F5A6E6 /* generador_de_citas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6F288E2C9B36E300F5A6E6 /* generador_de_citas.swift */; };
+		FB89F49A2CA4734E0057D9DC /* CitasUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB89F4992CA4734E0057D9DC /* CitasUsuario.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		FB6F287B2C9B2BB500F5A6E6 /* boceto_01UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boceto_01UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FB6F288C2C9B364900F5A6E6 /* Cita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cita.swift; sourceTree = "<group>"; };
 		FB6F288E2C9B36E300F5A6E6 /* generador_de_citas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = generador_de_citas.swift; sourceTree = "<group>"; };
+		FB89F4992CA4734E0057D9DC /* CitasUsuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitasUsuario.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				FB3FB2B42CA1BFA2008A40D4 /* ControladorCitas.swift */,
+				FB89F4992CA4734E0057D9DC /* CitasUsuario.swift */,
 			);
 			path = Controlador_de_vistas;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				FB6F288F2C9B36E300F5A6E6 /* generador_de_citas.swift in Sources */,
 				FB6F288D2C9B364900F5A6E6 /* Cita.swift in Sources */,
 				FB3FB2B52CA1BFA2008A40D4 /* ControladorCitas.swift in Sources */,
+				FB89F49A2CA4734E0057D9DC /* CitasUsuario.swift in Sources */,
 				FB6F285B2C9B2BB400F5A6E6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
