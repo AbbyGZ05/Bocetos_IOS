@@ -111,24 +111,35 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Has tu propia cita"/>
                                 <connections>
-                                    <segue destination="Hd9-MY-iZE" kind="show" id="1Pc-ft-U0m"/>
+                                    <segue destination="Hd9-MY-iZE" kind="presentation" modalPresentationStyle="fullScreen" id="1Pc-ft-U0m"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFO-Be-uw0">
+                                <rect key="frame" x="175" y="749" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6pn-74-I7o"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="Labelcito" destination="HFO-Be-uw0" id="95y-YT-9Kx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l0I-fz-zGJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="b45-sl-fRa" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="425" y="304"/>
+            <point key="canvasLocation" x="477" y="315"/>
         </scene>
-        <!--Controlador Citas Usuario-->
+        <!--Controlador Agregar Citas Usuario-->
         <scene sceneID="cjX-EH-cS0">
             <objects>
-                <viewController id="Hd9-MY-iZE" customClass="ControladorCitasUsuario" customModule="boceto_01" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Hd9-MY-iZE" customClass="ControladorAgregarCitasUsuario" customModule="boceto_01" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4uO-p5-H7E">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quien dijo la cita " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEa-KA-Y46">
@@ -158,20 +169,36 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJW-Sd-tB1">
-                                <rect key="frame" x="132" y="619" width="85" height="35"/>
+                                <rect key="frame" x="154" y="618" width="85" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Agregar"/>
+                                <connections>
+                                    <action selector="Agregar_cita_nueva:" destination="Hd9-MY-iZE" eventType="touchUpInside" id="E4m-8y-V3D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Y9-qm-g56">
+                                <rect key="frame" x="24" y="79" width="35" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="&lt;"/>
+                                <connections>
+                                    <segue destination="b45-sl-fRa" kind="unwind" unwindAction="volver_al_inicioWithSegue:" id="gcf-du-eiR"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7bK-iB-gVd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="AvH-A1-L3K"/>
+                    <connections>
+                        <outlet property="Nombre_de_quien_lo_dijo" destination="nW7-L4-a3O" id="tcp-VE-3h5"/>
+                        <outlet property="Que_es_lo_que_dijo" destination="AtR-bF-PnP" id="pLN-z6-bbm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wca-qY-uqF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="423.66412213740455" y="960.56338028169023"/>
+            <point key="canvasLocation" x="476" y="1121"/>
         </scene>
         <!--Controlador Citas-->
         <scene sceneID="JuS-3W-Pdd">
@@ -479,7 +506,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
