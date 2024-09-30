@@ -20,6 +20,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         actualizar_cantidad()
     }
+    
     func actualizar_cantidad(){
         Labelcito.text = String(citas_disponibles.citas_creadas.count)
     }
@@ -28,12 +29,14 @@ class ViewController: UIViewController {
         return ControladorCitas(cita_para_citar: citas_disponibles.obtener_cita_aleatoria(), coder: coder)
     }
     
-    @IBAction func volver_al_inicio(segue: UIStoryboardSegue){
-        if let pantalla_agregar_citas = segue.source as?
-                ControladorAgregarCitasUsuario{
-             citas_disponibles.agregar_cita(pantalla_agregar_citas.cita_creada!)
-         }
+    @IBSegueAction func abrir_pantalla_de_agregar_cita(_ coder: NSCoder) -> ControladorAgregarCitasUsuario? {
+        return ControladorAgregarCitasUsuario(pantalla_anterior: self, coder: coder)
+    }
+    @IBAction func volver_al_inicio(segue: UIStoryboardSegue) {
+        // Simplemente actualiza la cantidad de citas sin agregar ninguna.
         actualizar_cantidad()
     }
 }
+
+
 
