@@ -26,16 +26,27 @@ class ViewController: UIViewController {
     }
     
     @IBSegueAction func al_abrir_la_pantalla(_ coder: NSCoder) -> ControladorCitas? {
-        return ControladorCitas(cita_para_citar: citas_disponibles.obtener_cita_aleatoria(), coder: coder)
+        return ControladorCitas(cita_para_citar:     citas_disponibles.obtener_cita_aleatoria(), coder: coder)
     }
+    
+    @IBSegueAction func al_abrir_la_pantalla2(_ coder: NSCoder) -> ControladorCitas? {
+        return ControladorCitas(cita_para_citar:     citas_disponibles.obtener_cita_aleatoria(), coder: coder)
+    }
+  
+    @IBSegueAction func al_abrir_la_pantalla3(_ coder: NSCoder) -> ControladorCitas? {
+        return ControladorCitas(cita_para_citar:     citas_disponibles.obtener_cita_aleatoria(), coder: coder)
+    }
+    
     
     @IBSegueAction func abrir_pantalla_de_agregar_cita(_ coder: NSCoder) -> ControladorAgregarCitasUsuario? {
         return ControladorAgregarCitasUsuario(pantalla_anterior: self, coder: coder)
     }
+    
     @IBAction func volver_al_inicio(segue: UIStoryboardSegue) {
         // Simplemente actualiza la cantidad de citas sin agregar ninguna.
         actualizar_cantidad()
     }
+    
 }
 
 

@@ -20,6 +20,8 @@
 		FB6F288D2C9B364900F5A6E6 /* Cita.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6F288C2C9B364900F5A6E6 /* Cita.swift */; };
 		FB6F288F2C9B36E300F5A6E6 /* generador_de_citas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6F288E2C9B36E300F5A6E6 /* generador_de_citas.swift */; };
 		FB89F49A2CA4734E0057D9DC /* CitasUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB89F4992CA4734E0057D9DC /* CitasUsuario.swift */; };
+		FBC322E22CADAB4D00EB9E42 /* fondoDeApp.webp in Resources */ = {isa = PBXBuildFile; fileRef = FBC322E12CADAB4D00EB9E42 /* fondoDeApp.webp */; };
+		FBC322E42CADACA200EB9E42 /* FondoChidoParaAPP.png in Resources */ = {isa = PBXBuildFile; fileRef = FBC322E32CADACA200EB9E42 /* FondoChidoParaAPP.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		FB6F288C2C9B364900F5A6E6 /* Cita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cita.swift; sourceTree = "<group>"; };
 		FB6F288E2C9B36E300F5A6E6 /* generador_de_citas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = generador_de_citas.swift; sourceTree = "<group>"; };
 		FB89F4992CA4734E0057D9DC /* CitasUsuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitasUsuario.swift; sourceTree = "<group>"; };
+		FBC322E12CADAB4D00EB9E42 /* fondoDeApp.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = fondoDeApp.webp; sourceTree = "<group>"; };
+		FBC322E32CADACA200EB9E42 /* FondoChidoParaAPP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FondoChidoParaAPP.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,7 @@
 		FB6F284C2C9B2BB400F5A6E6 = {
 			isa = PBXGroup;
 			children = (
+				FBC322E02CADAAC000EB9E42 /* Imagenes */,
 				FB6F28572C9B2BB400F5A6E6 /* boceto_01 */,
 				FB6F286E2C9B2BB500F5A6E6 /* boceto_01Tests */,
 				FB6F28782C9B2BB500F5A6E6 /* boceto_01UITests */,
@@ -161,6 +166,15 @@
 				FB6F288E2C9B36E300F5A6E6 /* generador_de_citas.swift */,
 			);
 			path = Controlador;
+			sourceTree = "<group>";
+		};
+		FBC322E02CADAAC000EB9E42 /* Imagenes */ = {
+			isa = PBXGroup;
+			children = (
+				FBC322E32CADACA200EB9E42 /* FondoChidoParaAPP.png */,
+				FBC322E12CADAB4D00EB9E42 /* fondoDeApp.webp */,
+			);
+			name = Imagenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +284,8 @@
 				FB6F28622C9B2BB500F5A6E6 /* Assets.xcassets in Resources */,
 				FB6F28652C9B2BB500F5A6E6 /* Base in Resources */,
 				FB6F28602C9B2BB400F5A6E6 /* Base in Resources */,
+				FBC322E42CADACA200EB9E42 /* FondoChidoParaAPP.png in Resources */,
+				FBC322E22CADAB4D00EB9E42 /* fondoDeApp.webp in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

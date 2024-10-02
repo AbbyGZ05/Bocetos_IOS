@@ -29,8 +29,6 @@ class ControladorAgregarCitasUsuario: UIViewController {
     }
     
     @IBAction func Agregar_cita_nueva(_ sender: UIButton) {
-        print("Hola kaserola")
-        print(opantalla_anterior)
     if let quienLoDijo = Nombre_de_quien_lo_dijo.text, !quienLoDijo.isEmpty,
            let queDijo = Que_es_lo_que_dijo.text, !queDijo.isEmpty {
             cita_creada = cita(quien_lo_dijo: quienLoDijo, que_dijo: queDijo)
