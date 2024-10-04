@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB15A6112CB0415C00B084A1 /* fondoCitas.png in Resources */ = {isa = PBXBuildFile; fileRef = FB15A6102CB0415C00B084A1 /* fondoCitas.png */; };
 		FB3FB2B52CA1BFA2008A40D4 /* ControladorCitas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3FB2B42CA1BFA2008A40D4 /* ControladorCitas.swift */; };
 		FB6F28592C9B2BB400F5A6E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6F28582C9B2BB400F5A6E6 /* AppDelegate.swift */; };
 		FB6F285B2C9B2BB400F5A6E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6F285A2C9B2BB400F5A6E6 /* SceneDelegate.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB15A6102CB0415C00B084A1 /* fondoCitas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fondoCitas.png; sourceTree = "<group>"; };
 		FB3FB2B42CA1BFA2008A40D4 /* ControladorCitas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorCitas.swift; sourceTree = "<group>"; };
 		FB6F28552C9B2BB400F5A6E6 /* boceto_01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = boceto_01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB6F28582C9B2BB400F5A6E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 		FBC322E02CADAAC000EB9E42 /* Imagenes */ = {
 			isa = PBXGroup;
 			children = (
+				FB15A6102CB0415C00B084A1 /* fondoCitas.png */,
 				FBC322E32CADACA200EB9E42 /* FondoChidoParaAPP.png */,
 				FBC322E12CADAB4D00EB9E42 /* fondoDeApp.webp */,
 			);
@@ -282,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB6F28622C9B2BB500F5A6E6 /* Assets.xcassets in Resources */,
+				FB15A6112CB0415C00B084A1 /* fondoCitas.png in Resources */,
 				FB6F28652C9B2BB500F5A6E6 /* Base in Resources */,
 				FB6F28602C9B2BB400F5A6E6 /* Base in Resources */,
 				FBC322E42CADACA200EB9E42 /* FondoChidoParaAPP.png in Resources */,
