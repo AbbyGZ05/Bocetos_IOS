@@ -16,6 +16,7 @@
 		FBCB44262CB4327A00D96D2F /* Boceto_02UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCB44252CB4327A00D96D2F /* Boceto_02UITests.swift */; };
 		FBCB44282CB4327A00D96D2F /* Boceto_02UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCB44272CB4327A00D96D2F /* Boceto_02UITestsLaunchTests.swift */; };
 		FBCB44372CB4376600D96D2F /* controladorPantallaPrincipalDeColeccion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCB44362CB4376600D96D2F /* controladorPantallaPrincipalDeColeccion.swift */; };
+		FBCB44392CB43D3300D96D2F /* vistaDeCelda.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCB44382CB43D3300D96D2F /* vistaDeCelda.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		FBCB44252CB4327A00D96D2F /* Boceto_02UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boceto_02UITests.swift; sourceTree = "<group>"; };
 		FBCB44272CB4327A00D96D2F /* Boceto_02UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boceto_02UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FBCB44362CB4376600D96D2F /* controladorPantallaPrincipalDeColeccion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = controladorPantallaPrincipalDeColeccion.swift; sourceTree = "<group>"; };
+		FBCB44382CB43D3300D96D2F /* vistaDeCelda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vistaDeCelda.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				FBCB44362CB4376600D96D2F /* controladorPantallaPrincipalDeColeccion.swift */,
+				FBCB44382CB43D3300D96D2F /* vistaDeCelda.swift */,
 			);
 			path = vistaDeCeldas;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				FBCB44372CB4376600D96D2F /* controladorPantallaPrincipalDeColeccion.swift in Sources */,
 				FBCB44052CB4327900D96D2F /* AppDelegate.swift in Sources */,
 				FBCB44072CB4327900D96D2F /* SceneDelegate.swift in Sources */,
+				FBCB44392CB43D3300D96D2F /* vistaDeCelda.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

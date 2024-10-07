@@ -44,15 +44,22 @@ class controladorPantallaPrincipalDeColeccion: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
         return 6    }
+    
+    //funcion para identificar y crear cada una de las  celdas en el controlaodr
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let celda = collectionView.dequeueReusableCell(withReuseIdentifier: IdentificadorDeCelda, for: indexPath)
+        let celda:
+        vistaDeCelda = collectionView.dequeueReusableCell(withReuseIdentifier: IdentificadorDeCelda, for: indexPath) as! vistaDeCelda
     
         // Configure the cell
+        celda.etiqueta.text  = "\(indexPath)"
     
         return celda
     }
-
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("Se seleciono la celda \(indexPath)")
+    }
     // MARK: UICollectionViewDelegate
 
     /*
