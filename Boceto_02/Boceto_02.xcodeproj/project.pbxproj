@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		FBCB44052CB4327900D96D2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCB44042CB4327900D96D2F /* AppDelegate.swift */; };
 		FBCB44072CB4327900D96D2F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCB44062CB4327900D96D2F /* SceneDelegate.swift */; };
-		FBCB44092CB4327900D96D2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCB44082CB4327900D96D2F /* ViewController.swift */; };
 		FBCB440C2CB4327900D96D2F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FBCB440B2CB4327900D96D2F /* Base */; };
 		FBCB440E2CB4327A00D96D2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBCB440D2CB4327A00D96D2F /* Assets.xcassets */; };
 		FBCB44112CB4327A00D96D2F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FBCB44102CB4327A00D96D2F /* Base */; };
 		FBCB441C2CB4327A00D96D2F /* Boceto_02Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCB441B2CB4327A00D96D2F /* Boceto_02Tests.swift */; };
 		FBCB44262CB4327A00D96D2F /* Boceto_02UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCB44252CB4327A00D96D2F /* Boceto_02UITests.swift */; };
 		FBCB44282CB4327A00D96D2F /* Boceto_02UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCB44272CB4327A00D96D2F /* Boceto_02UITestsLaunchTests.swift */; };
+		FBCB44372CB4376600D96D2F /* controladorPantallaPrincipalDeColeccion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCB44362CB4376600D96D2F /* controladorPantallaPrincipalDeColeccion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,6 @@
 		FBCB44012CB4327900D96D2F /* Boceto_02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Boceto_02.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBCB44042CB4327900D96D2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBCB44062CB4327900D96D2F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FBCB44082CB4327900D96D2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FBCB440B2CB4327900D96D2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FBCB440D2CB4327A00D96D2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBCB44102CB4327A00D96D2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		FBCB44212CB4327A00D96D2F /* Boceto_02UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Boceto_02UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBCB44252CB4327A00D96D2F /* Boceto_02UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boceto_02UITests.swift; sourceTree = "<group>"; };
 		FBCB44272CB4327A00D96D2F /* Boceto_02UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boceto_02UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FBCB44362CB4376600D96D2F /* controladorPantallaPrincipalDeColeccion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = controladorPantallaPrincipalDeColeccion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +99,9 @@
 		FBCB44032CB4327900D96D2F /* Boceto_02 */ = {
 			isa = PBXGroup;
 			children = (
+				FBCB44342CB4368F00D96D2F /* ControladoresDePantalla */,
 				FBCB44042CB4327900D96D2F /* AppDelegate.swift */,
 				FBCB44062CB4327900D96D2F /* SceneDelegate.swift */,
-				FBCB44082CB4327900D96D2F /* ViewController.swift */,
 				FBCB440A2CB4327900D96D2F /* Main.storyboard */,
 				FBCB440D2CB4327A00D96D2F /* Assets.xcassets */,
 				FBCB440F2CB4327A00D96D2F /* LaunchScreen.storyboard */,
@@ -125,6 +125,22 @@
 				FBCB44272CB4327A00D96D2F /* Boceto_02UITestsLaunchTests.swift */,
 			);
 			path = Boceto_02UITests;
+			sourceTree = "<group>";
+		};
+		FBCB44342CB4368F00D96D2F /* ControladoresDePantalla */ = {
+			isa = PBXGroup;
+			children = (
+				FBCB44352CB436A600D96D2F /* vistaDeCeldas */,
+			);
+			name = ControladoresDePantalla;
+			sourceTree = "<group>";
+		};
+		FBCB44352CB436A600D96D2F /* vistaDeCeldas */ = {
+			isa = PBXGroup;
+			children = (
+				FBCB44362CB4376600D96D2F /* controladorPantallaPrincipalDeColeccion.swift */,
+			);
+			path = vistaDeCeldas;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBCB44092CB4327900D96D2F /* ViewController.swift in Sources */,
+				FBCB44372CB4376600D96D2F /* controladorPantallaPrincipalDeColeccion.swift in Sources */,
 				FBCB44052CB4327900D96D2F /* AppDelegate.swift in Sources */,
 				FBCB44072CB4327900D96D2F /* SceneDelegate.swift in Sources */,
 			);
