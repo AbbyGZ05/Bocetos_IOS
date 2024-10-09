@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB0C269C2CB6D80B00311104 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0C269B2CB6D80B00311104 /* Post.swift */; };
 		FBCB44052CB4327900D96D2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCB44042CB4327900D96D2F /* AppDelegate.swift */; };
 		FBCB44072CB4327900D96D2F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCB44062CB4327900D96D2F /* SceneDelegate.swift */; };
 		FBCB440C2CB4327900D96D2F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FBCB440B2CB4327900D96D2F /* Base */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB0C269B2CB6D80B00311104 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		FBCB44012CB4327900D96D2F /* Boceto_02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Boceto_02.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBCB44042CB4327900D96D2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBCB44062CB4327900D96D2F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB0C269A2CB6D79F00311104 /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+				FB0C269B2CB6D80B00311104 /* Post.swift */,
+			);
+			path = Modelos;
+			sourceTree = "<group>";
+		};
 		FBCB43F82CB4327900D96D2F = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +111,7 @@
 		FBCB44032CB4327900D96D2F /* Boceto_02 */ = {
 			isa = PBXGroup;
 			children = (
+				FB0C269A2CB6D79F00311104 /* Modelos */,
 				FBCB44342CB4368F00D96D2F /* ControladoresDePantalla */,
 				FBCB44042CB4327900D96D2F /* AppDelegate.swift */,
 				FBCB44062CB4327900D96D2F /* SceneDelegate.swift */,
@@ -281,6 +292,7 @@
 				FBCB44052CB4327900D96D2F /* AppDelegate.swift in Sources */,
 				FBCB44072CB4327900D96D2F /* SceneDelegate.swift in Sources */,
 				FBCB44392CB43D3300D96D2F /* vistaDeCelda.swift in Sources */,
+				FB0C269C2CB6D80B00311104 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
