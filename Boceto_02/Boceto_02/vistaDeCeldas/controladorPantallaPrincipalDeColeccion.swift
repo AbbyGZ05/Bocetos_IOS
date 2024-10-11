@@ -18,19 +18,22 @@ class controladorPantallaPrincipalDeColeccion: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Registrar la celda
-              collectionView.register(vistaDeCelda.self, forCellWithReuseIdentifier: IdentificadorDeCelda)
+              // collectionView.register(vistaDeCelda.self, forCellWithReuseIdentifier: IdentificadorDeCelda)
                 
                 // Obtener datos
+        
         let ubicacion = URL(string: url_publicacion)!
         URLSession.shared.dataTask(with: ubicacion){(datos, respuesta, error) in do {
             if let publicaciones_recibidas = datos{
                 let prueba_de_interpretacion_de_datos = try JSONDecoder().decode([publicacion].self, from: publicaciones_recibidas)
-                DispatchQueue.main.async{
+           
                     self.lista_de_publicaciones = prueba_de_interpretacion_de_datos
+                DispatchQueue.main.async{
+                    self.collectionView.reloadData()
                 }
             }
             else{
-                print("No Se Resibio Informacion")
+                print(respuesta)
             }
         }
             catch{
@@ -39,7 +42,6 @@ class controladorPantallaPrincipalDeColeccion: UICollectionViewController {
             
         }.resume()
         
-        print(lista_de_publicaciones)
     }
     /*
      // MARK: - Navigation
@@ -62,26 +64,33 @@ class controladorPantallaPrincipalDeColeccion: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 6    }
+        return 1  }
     
     //funcion para identificar y crear cada una de las  celdas en el controlaodr
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let celda:
-        vistaDeCelda = collectionView.dequeueReusableCell(withReuseIdentifier: IdentificadorDeCelda, for: indexPath) as! vistaDeCelda
+        let celda: vistaDeCelda = collectionView.dequeueReusableCell(withReuseIdentifier: IdentificadorDeCelda, for: indexPath) as! vistaDeCelda
         
         // Asegúrate de que la celda no sea nil
-            let publicacion = lista_de_publicaciones[indexPath.item]
-            celda.etiqueta.text = "\(indexPath)"
+            //let publicacion = lista_de_publicaciones[indexPath.item]
+            //celda.etiqueta.text = "\(indexPath)"
+        celda.etiqueta.text = self.lista_de_publicaciones[indexPath.item].title
+        celda.cuerpo.text = self.lista_de_publicaciones[indexPath.item].body
         // Configure the cell
         //celda.etiqueta.text  = "\(indexPath)"
         
         return celda
     }
     
-    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+  /*  override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("Se seleciono la celda \(indexPath)")
-    }
+        
+        let pantalla_de_publicacion = storyboard?.instantiateViewController(withIdentifier: "PantallaPublicacion") as! ControladorPantallaDelPost
+                
+                self.navigationController?.pushViewController(pantalla_de_publicacion, animated: true)
+                
+                print(self.navigationController)
+    }*/
     // MARK: UICollectionViewDelegate
     
     /*

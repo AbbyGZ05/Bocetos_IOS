@@ -12,7 +12,7 @@ struct publicacion: Decodable{
     //Encodable: permite convertir un modelo de sift a json
     //Codable: ambas al mismo tiempo
     var id: Int
-    var userID: Int
+    var userId: Int
     var title: String
     var body: String
 }
