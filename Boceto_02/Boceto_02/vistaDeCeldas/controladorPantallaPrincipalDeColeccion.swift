@@ -58,13 +58,14 @@ class controladorPantallaPrincipalDeColeccion: UICollectionViewController {
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         //Imprime el simeroo de secciones que haya en la lista
-        return lista_de_publicaciones.count
+        return 1
     }
     
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 1  }
+        return lista_de_publicaciones.count
+    }
     
     //funcion para identificar y crear cada una de las  celdas en el controlaodr
     

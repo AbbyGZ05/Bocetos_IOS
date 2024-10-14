@@ -9,20 +9,23 @@ extension controladorPantallaPrincipalDeColeccion: UICollectionViewDelegateFlowL
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt idexPhat: IndexPath) -> CGSize{
         
         var ancho = self.collectionView.frame.width
+        print("cunato es el ancho antes de \(ancho)")
         var largo = self.collectionView.frame.height
         
-        ancho = ancho / 3
-        largo = largo * 0.3
+        ancho = ancho / 1.2
+        print("\(ancho) del elemento \(idexPhat.item) ")
+        largo = largo * 0.4
         
         return CGSize(width: ancho, height:largo)
+    }
         //Modificar el inset de la vista
-        func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-            var margin = CGFloat(25)
-            return UIEdgeInsets(top: margin, left: margin, bottom: margin, right: margin)
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+            let margin = CGFloat(25)
+            return UIEdgeInsets(top: 50, left: margin, bottom: 50, right: margin)
         }
         func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         
-        return 500
+        return 20
         }
         func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         
@@ -68,4 +71,3 @@ extension controladorPantallaPrincipalDeColeccion: UICollectionViewDelegateFlowL
      
      }
      }*/
-}
