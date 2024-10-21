@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aju-Kv-3v4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xUu-qL-Jcs">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -83,8 +84,88 @@
             </objects>
             <point key="canvasLocation" x="600.76335877862596" y="-68.309859154929583"/>
         </scene>
+        <!--Controlador Pantalla Del Post-->
+        <scene sceneID="Hdi-Xu-vF7">
+            <objects>
+                <viewController storyboardIdentifier="PantallaPublicacion" id="LrR-Zj-INO" customClass="ControladorPantallaDelPost" customModule="Boceto_02" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a1Z-Zh-n8Q">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo de publicacion" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JD1-S5-Cm4">
+                                <rect key="frame" x="16" y="159" width="361" height="28.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuerpo de la publicacion" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQz-ge-scL">
+                                <rect key="frame" x="16" y="261.66666666666669" width="361" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tC8-as-Sv6">
+                                <rect key="frame" x="16" y="362" width="361" height="440"/>
+                                <color key="backgroundColor" red="0.032125217740000003" green="1" blue="3.3306690740000002e-16" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="v9F-qV-2oK">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="f0J-5V-tkG">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="49j-Pw-Tat">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" red="0.0" green="0.17127475859999999" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre de usuario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTw-BE-shc">
+                                <rect key="frame" x="16" y="207" width="361" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DtW-N7-suB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DtW-N7-suB" firstAttribute="trailing" secondItem="gTw-BE-shc" secondAttribute="trailing" constant="16" id="0g8-of-djN"/>
+                            <constraint firstItem="JD1-S5-Cm4" firstAttribute="top" secondItem="DtW-N7-suB" secondAttribute="top" constant="100" id="FMG-dt-nKv"/>
+                            <constraint firstItem="DtW-N7-suB" firstAttribute="bottom" secondItem="tC8-as-Sv6" secondAttribute="bottom" constant="16" id="GFT-dE-rvB"/>
+                            <constraint firstItem="gTw-BE-shc" firstAttribute="top" secondItem="JD1-S5-Cm4" secondAttribute="bottom" constant="19.333333333333343" id="ILx-jb-SNQ"/>
+                            <constraint firstItem="fQz-ge-scL" firstAttribute="top" secondItem="JD1-S5-Cm4" secondAttribute="bottom" constant="74" id="Kbe-Jb-bCa"/>
+                            <constraint firstItem="fQz-ge-scL" firstAttribute="leading" secondItem="DtW-N7-suB" secondAttribute="leading" constant="16" id="KpO-It-oGI"/>
+                            <constraint firstItem="DtW-N7-suB" firstAttribute="trailing" secondItem="fQz-ge-scL" secondAttribute="trailing" constant="16" id="Ppf-oY-zu7"/>
+                            <constraint firstItem="tC8-as-Sv6" firstAttribute="leading" secondItem="DtW-N7-suB" secondAttribute="leading" constant="16" id="RgB-fC-bmT"/>
+                            <constraint firstItem="tC8-as-Sv6" firstAttribute="top" secondItem="fQz-ge-scL" secondAttribute="bottom" constant="80" id="aUT-To-RCU"/>
+                            <constraint firstItem="DtW-N7-suB" firstAttribute="trailing" secondItem="JD1-S5-Cm4" secondAttribute="trailing" constant="16" id="lDE-Yg-Udm"/>
+                            <constraint firstItem="DtW-N7-suB" firstAttribute="trailing" secondItem="tC8-as-Sv6" secondAttribute="trailing" constant="16" id="wRt-4R-ccb"/>
+                            <constraint firstItem="JD1-S5-Cm4" firstAttribute="leading" secondItem="DtW-N7-suB" secondAttribute="leading" constant="16" id="wtm-At-FGj"/>
+                            <constraint firstItem="gTw-BE-shc" firstAttribute="leading" secondItem="DtW-N7-suB" secondAttribute="leading" constant="16" id="yrK-7A-rHA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Cuerpo_publicacion" destination="fQz-ge-scL" id="9qF-03-NMu"/>
+                        <outlet property="Nombre_de_usuario" destination="gTw-BE-shc" id="tfk-wV-0ee"/>
+                        <outlet property="Seccion_Comentarios" destination="tC8-as-Sv6" id="B9U-Qn-Uhj"/>
+                        <outlet property="Titulo_de_publicacion" destination="JD1-S5-Cm4" id="ffe-Ls-qm5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HpE-kU-6sD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1423.6641221374045" y="-91.549295774647888"/>
+        </scene>
     </scenes>
     <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="tintColor">
             <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

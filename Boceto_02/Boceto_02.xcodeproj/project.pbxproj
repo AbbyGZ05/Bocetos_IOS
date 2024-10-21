@@ -20,6 +20,10 @@
 		FBCB44282CB4327A00D96D2F /* Boceto_02UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCB44272CB4327A00D96D2F /* Boceto_02UITestsLaunchTests.swift */; };
 		FBCB44372CB4376600D96D2F /* controladorPantallaPrincipalDeColeccion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCB44362CB4376600D96D2F /* controladorPantallaPrincipalDeColeccion.swift */; };
 		FBCB44392CB43D3300D96D2F /* vistaDeCelda.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCB44382CB43D3300D96D2F /* vistaDeCelda.swift */; };
+		FBCFB6632CC6A5810004220F /* Usuarios.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCFB6622CC6A5810004220F /* Usuarios.swift */; };
+		FBCFB6662CC6A5D20004220F /* Provedor_publicaciones.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCFB6652CC6A5D20004220F /* Provedor_publicaciones.swift */; };
+		FBCFB6682CC6A6820004220F /* mod_navegador_principal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCFB6672CC6A6820004220F /* mod_navegador_principal.swift */; };
+		FBCFB66A2CC6B9D20004220F /* Comentario.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCFB6692CC6B9D20004220F /* Comentario.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,10 @@
 		FBCB44272CB4327A00D96D2F /* Boceto_02UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boceto_02UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FBCB44362CB4376600D96D2F /* controladorPantallaPrincipalDeColeccion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = controladorPantallaPrincipalDeColeccion.swift; sourceTree = "<group>"; };
 		FBCB44382CB43D3300D96D2F /* vistaDeCelda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vistaDeCelda.swift; sourceTree = "<group>"; };
+		FBCFB6622CC6A5810004220F /* Usuarios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuarios.swift; sourceTree = "<group>"; };
+		FBCFB6652CC6A5D20004220F /* Provedor_publicaciones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provedor_publicaciones.swift; sourceTree = "<group>"; };
+		FBCFB6672CC6A6820004220F /* mod_navegador_principal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mod_navegador_principal.swift; sourceTree = "<group>"; };
+		FBCFB6692CC6B9D20004220F /* Comentario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comentario.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				FB0C269B2CB6D80B00311104 /* Post.swift */,
+				FBCFB6622CC6A5810004220F /* Usuarios.swift */,
+				FBCFB6692CC6B9D20004220F /* Comentario.swift */,
 			);
 			path = Modelos;
 			sourceTree = "<group>";
@@ -96,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				FB6AB5022CB984E700514C61 /* EstiloCellViewControlerCelular.swift */,
+				FBCFB6672CC6A6820004220F /* mod_navegador_principal.swift */,
 			);
 			name = estilos;
 			sourceTree = "<group>";
@@ -123,6 +134,7 @@
 		FBCB44032CB4327900D96D2F /* Boceto_02 */ = {
 			isa = PBXGroup;
 			children = (
+				FBCFB6642CC6A5A00004220F /* Provedor */,
 				FB0C269A2CB6D79F00311104 /* Modelos */,
 				FBCB44342CB4368F00D96D2F /* ControladoresDePantalla */,
 				FBCB44042CB4327900D96D2F /* AppDelegate.swift */,
@@ -169,6 +181,14 @@
 				FBCB44382CB43D3300D96D2F /* vistaDeCelda.swift */,
 			);
 			path = vistaDeCeldas;
+			sourceTree = "<group>";
+		};
+		FBCFB6642CC6A5A00004220F /* Provedor */ = {
+			isa = PBXGroup;
+			children = (
+				FBCFB6652CC6A5D20004220F /* Provedor_publicaciones.swift */,
+			);
+			name = Provedor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,9 +324,13 @@
 			files = (
 				FBCB44372CB4376600D96D2F /* controladorPantallaPrincipalDeColeccion.swift in Sources */,
 				FBCB44052CB4327900D96D2F /* AppDelegate.swift in Sources */,
+				FBCFB66A2CC6B9D20004220F /* Comentario.swift in Sources */,
 				FBCB44072CB4327900D96D2F /* SceneDelegate.swift in Sources */,
 				FBCB44392CB43D3300D96D2F /* vistaDeCelda.swift in Sources */,
+				FBCFB6662CC6A5D20004220F /* Provedor_publicaciones.swift in Sources */,
+				FBCFB6632CC6A5810004220F /* Usuarios.swift in Sources */,
 				FB6AB5002CB9831300514C61 /* ControladorPantallaDelPost.swift in Sources */,
+				FBCFB6682CC6A6820004220F /* mod_navegador_principal.swift in Sources */,
 				FB0C269C2CB6D80B00311104 /* Post.swift in Sources */,
 				FB6AB5032CB984E700514C61 /* EstiloCellViewControlerCelular.swift in Sources */,
 			);

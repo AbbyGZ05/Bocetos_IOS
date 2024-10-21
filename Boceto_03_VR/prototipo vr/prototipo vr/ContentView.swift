@@ -16,11 +16,12 @@ struct ContentView: View {
         VStack {
             Model3D(named: "Scene", bundle: realityKitContentBundle)
                 .padding(.bottom, 50)
-            Model3D(named: "Prueba_02", bundle: realityKitContentBundle.padding(.bottom,0) )
+            Model3D(named: "Prueba_02", bundle: realityKitContentBundle).padding(.bottom,0)
                     }
             Text("Hello, world!")
             Text("Hello, world chido!\(pulsaciones)")
-        }
+        }, Label:{("Holis"
+        })
         .padding()
     }
 }
