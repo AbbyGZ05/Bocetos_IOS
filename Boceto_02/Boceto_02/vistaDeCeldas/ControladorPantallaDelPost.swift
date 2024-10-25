@@ -60,7 +60,7 @@ class ControladorPantallaDelPost: UIViewController {
         }
         Titulo_de_publicacion.text = publicacion_actual.title
         Cuerpo_publicacion.text = publicacion_actual.body
-        Nombre_de_usuario.text = publicacion_actual.
+       
         
         print(publicacion?.body)
     }
