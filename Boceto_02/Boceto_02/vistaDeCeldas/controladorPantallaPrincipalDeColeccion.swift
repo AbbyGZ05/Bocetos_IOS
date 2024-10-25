@@ -11,6 +11,7 @@ import UIKit
 
 class controladorPantallaPrincipalDeColeccion: UICollectionViewController {
     private var lista_de_publicaciones: [publicacion] = []
+    
     private let IdentificadorDeCelda = "celda_pantalla_principal"
     private let url_publicacion = "https://jsonplaceholder.typicode.com/posts"
     
@@ -37,7 +38,7 @@ class controladorPantallaPrincipalDeColeccion: UICollectionViewController {
             }
         }
             catch{
-                print("Error \(error)")
+                print("Error \(error):v")
             }
             
         }.resume()
@@ -64,7 +65,7 @@ class controladorPantallaPrincipalDeColeccion: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return lista_de_publicaciones.count
+        return self.lista_de_publicaciones.count
     }
     
     //funcion para identificar y crear cada una de las  celdas en el controlaodr

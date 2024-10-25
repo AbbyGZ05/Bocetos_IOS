@@ -7,14 +7,17 @@
 
 import UIKit
 
-class ControladorPantallaDelPost: UIViewController {
+class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource {
+    
+    
     let proveedor_publicaciones = ProveedorDePublicaciones.autoreferencia
     
     public var id_publicacion: Int?
     private var publicacion: publicacion?
     private var usuario: Usuario?
     private var lista_Comentarios: [Comentario] = []
-
+    private let IdentificadorDeCelda = "celda comentario"
+    
     
     @IBOutlet weak var Titulo_de_publicacion: UILabel!
     @IBOutlet weak var Seccion_Comentarios: UICollectionView!
@@ -24,7 +27,7 @@ class ControladorPantallaDelPost: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
+        
         // Do any additional setup after loading the view.
         
         
@@ -35,23 +38,31 @@ class ControladorPantallaDelPost: UIViewController {
     }
     
     func realizar_descarga_de_informacion(){
-            if self.publicacion == nil {
-                proveedor_publicaciones.obtener_publicacion(id: self.id_publicacion ?? -1, que_hacer_al_recibir: {
-                    [weak self] (publicacion) in self?.publicacion = publicacion
-                    DispatchQueue.main.async {
-                        self?.dibujar_publicacion()
-                    }
-                })
-            }
-            
-            else if self.publicacion != nil {
-                proveedor_publicaciones.obtener_usuario(id: publicacion!.userId, que_hacer_al_recibir: {
-                    [weak self] (usuario) in self?.usuario = usuario
-                    DispatchQueue.main.async {
-                        self?.dibujar_publicacion()
-                    }
-                })
-            }
+        if self.publicacion == nil {
+            proveedor_publicaciones.obtener_publicacion(id: self.id_publicacion ?? -1, que_hacer_al_recibir: {
+                [weak self] (publicacion) in self?.publicacion = publicacion
+                DispatchQueue.main.async {
+                    self?.dibujar_publicacion()
+                    self?.realizar_descarga_de_informacion()
+                }
+            })
+        }
+        
+        else if self.publicacion != nil {
+            proveedor_publicaciones.obtener_usuario(id: publicacion!.userId, que_hacer_al_recibir: {
+                [weak self] (usuario) in self?.usuario = usuario
+                DispatchQueue.main.async {
+                    self?.dibujar_usuario()
+                    
+                }
+            })
+            proveedor_publicaciones.obtener_comentarios_en_publicacion(id: publicacion!.id, que_hacer_al_recibir: {
+                [weak self] (comentarios_descargados) in self?.lista_Comentarios = comentarios_descargados
+                DispatchQueue.main.async {
+                    self?.Seccion_Comentarios.reloadData()
+                }
+            })
+        }
     }
     
     func dibujar_publicacion(){
@@ -60,11 +71,32 @@ class ControladorPantallaDelPost: UIViewController {
         }
         Titulo_de_publicacion.text = publicacion_actual.title
         Cuerpo_publicacion.text = publicacion_actual.body
-       
+        
         
         print(publicacion?.body)
     }
     
+    func dibujar_usuario(){
+        guard let usuario_actual = self.usuario else {
+            return
+        }
+        Nombre_de_usuario.text = usuario_actual.username
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return lista_Comentarios.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        print("Aqui denberia hacer algo")
+        let celda = collectionView.dequeueReusableCell(withReuseIdentifier: IdentificadorDeCelda, for: indexPath)
+        
+        celda.tintColor = UIColor.brown
+        
+        return celda
+    }
+}
 
     /*
     // MARK: - Navigation
@@ -76,5 +108,4 @@ class ControladorPantallaDelPost: UIViewController {
     }
     */
 
-}
 
