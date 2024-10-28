@@ -75,7 +75,7 @@ class ProveedorDePublicaciones{
     // func obtener_publicaicones() async throws -> [Publicacion] {
     func obtener_usuario(id: Int, que_hacer_al_recibir: @escaping (Usuario) -> Void) {
         ///  Acomodamos para descargar solo un post en especififco.
-        let ubicacion = URL(string: "\(url_de_publicaciones)users\(id)")!
+        let ubicacion = URL(string: "\(url_de_publicaciones)users/\(id)")!
         
         URLSession.shared.dataTask(with: ubicacion) {
                 (datos, respuesta, error) in do {

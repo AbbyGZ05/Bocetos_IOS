@@ -16,7 +16,7 @@ class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource {
     private var publicacion: publicacion?
     private var usuario: Usuario?
     private var lista_Comentarios: [Comentario] = []
-    private let IdentificadorDeCelda = "celda comentario"
+    private let IdentificadorDeCelda = "celdaComentario"
     
     
     @IBOutlet weak var Titulo_de_publicacion: UILabel!
@@ -26,6 +26,7 @@ class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("Se esta cargando para \(self.id_publicacion)")
         
         
         // Do any additional setup after loading the view.
@@ -33,6 +34,7 @@ class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource {
         
         let controlador_de_navegacion = self.navigationController as? mod_navegador_principal
         controlador_de_navegacion?.activar_navigation_bar(actviar: true)
+        Seccion_Comentarios.dataSource = self
         
         realizar_descarga_de_informacion()
     }
@@ -60,6 +62,7 @@ class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource {
                 [weak self] (comentarios_descargados) in self?.lista_Comentarios = comentarios_descargados
                 DispatchQueue.main.async {
                     self?.Seccion_Comentarios.reloadData()
+                    //print(self?.lista_Comentarios)
                 }
             })
         }
@@ -72,8 +75,6 @@ class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource {
         Titulo_de_publicacion.text = publicacion_actual.title
         Cuerpo_publicacion.text = publicacion_actual.body
         
-        
-        print(publicacion?.body)
     }
     
     func dibujar_usuario(){
@@ -85,6 +86,7 @@ class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource {
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        print("Cuantos cometnariuos hay \(lista_Comentarios.count)")
         return lista_Comentarios.count
     }
     
