@@ -35,47 +35,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.082352943720000002" green="0.19607841970000001" blue="0.20000001789999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bs3-HM-r2n">
-                            <size key="itemSize" width="288" height="293"/>
+                            <size key="itemSize" width="321" height="342"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="celda_pantalla_principal" id="Ht5-1h-lWC" customClass="vistaDeCelda" customModule="Boceto_02" customModuleProvider="target">
-                                <rect key="frame" x="52.666666666666664" y="0.0" width="288" height="293"/>
+                                <rect key="frame" x="36" y="0.0" width="321" height="342"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="YXe-mg-PXY">
-                                    <rect key="frame" x="0.0" y="0.0" width="288" height="293"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="321" height="342"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVg-UQ-qrX">
-                                            <rect key="frame" x="15" y="16" width="256" height="62"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="62" id="l1M-wc-xkS"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cuerpo" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMS-sC-lLk">
+                                            <rect key="frame" x="46" y="100" width="233" height="216"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuerpo" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMS-sC-lLk">
-                                            <rect key="frame" x="16" y="100" width="256" height="167"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVg-UQ-qrX">
+                                            <rect key="frame" x="46" y="30" width="233" height="62"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <constraints>
-                                        <constraint firstItem="iVg-UQ-qrX" firstAttribute="top" secondItem="YXe-mg-PXY" secondAttribute="top" constant="16" id="0du-FT-ZNg"/>
-                                        <constraint firstAttribute="bottom" secondItem="gMS-sC-lLk" secondAttribute="bottom" constant="26" id="Dgs-Bo-Te8"/>
-                                        <constraint firstItem="iVg-UQ-qrX" firstAttribute="leading" secondItem="YXe-mg-PXY" secondAttribute="leading" constant="15" id="WAr-a7-TTO"/>
-                                        <constraint firstItem="gMS-sC-lLk" firstAttribute="top" secondItem="iVg-UQ-qrX" secondAttribute="bottom" constant="22" id="Xhg-yp-yiG"/>
-                                        <constraint firstAttribute="trailing" secondItem="iVg-UQ-qrX" secondAttribute="trailing" constant="17" id="bIG-sI-8Mh"/>
-                                        <constraint firstAttribute="trailing" secondItem="gMS-sC-lLk" secondAttribute="trailing" constant="16" id="tnc-uE-lb9"/>
-                                        <constraint firstItem="gMS-sC-lLk" firstAttribute="leading" secondItem="YXe-mg-PXY" secondAttribute="leading" constant="16" id="x4U-I0-bOJ"/>
-                                    </constraints>
                                 </collectionViewCellContentView>
                                 <color key="backgroundColor" red="0.0" green="0.17127475859999999" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <size key="customSize" width="288" height="293"/>
+                                <size key="customSize" width="321" height="342"/>
                                 <connections>
                                     <outlet property="cuerpo" destination="gMS-sC-lLk" id="f1c-vG-MYl"/>
                                     <outlet property="etiqueta" destination="iVg-UQ-qrX" id="SbH-I4-Fqv"/>

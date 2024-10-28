@@ -13,27 +13,27 @@ extension controladorPantallaPrincipalDeColeccion: UICollectionViewDelegateFlowL
         print("cunato es el ancho antes de \(ancho)")
         var largo = self.collectionView.frame.height
         
-        ancho = ancho / 0.1
+        ancho = ancho / 0.5
         print("\(ancho) del elemento \(idexPhat.item) ")
-        largo = largo * 0.5
+        largo = largo * 0.4
         
         return CGSize(width: ancho, height:largo)
     }
     //Modificar el inset de la vista
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        let margin = CGFloat(10)
-        return UIEdgeInsets(top: 5, left: margin, bottom: margin, right: margin)
+        let margin = CGFloat(5)
+        return UIEdgeInsets(top: margin, left: margin, bottom: margin, right: margin)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         
-        return 0
-    }
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         var ancho = self.collectionView.frame.width
-        ancho = ancho / 15
+        ancho = ancho / 0.5
         return ancho
     }
-    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        
+        return 10
+    }
 }
 
  /*extension ControladorPantallaPrincipalDeColeccion: UICollectionViewDelegateFlowLayout{
