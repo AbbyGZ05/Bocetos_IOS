@@ -15,14 +15,19 @@ class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource {
     public var id_publicacion: Int?
     private var publicacion: publicacion?
     private var usuario: Usuario?
+    
     private var lista_Comentarios: [Comentario] = []
+    
     private let IdentificadorDeCelda = "celdaComentario"
+    private let url_Comentarios = "https://jsonplaceholder.typicode.com/comments?postId=1"
+
     
     
     @IBOutlet weak var Titulo_de_publicacion: UILabel!
     @IBOutlet weak var Seccion_Comentarios: UICollectionView!
     @IBOutlet weak var Cuerpo_publicacion: UILabel!
     @IBOutlet weak var Nombre_de_usuario: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -84,17 +89,22 @@ class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource {
         Nombre_de_usuario.text = usuario_actual.username
     }
     
+ 
+    
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print("Cuantos cometnariuos hay \(lista_Comentarios.count)")
+        print("Cuantos cometnarios hay \(lista_Comentarios.count)")
         return lista_Comentarios.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         print("Aqui denberia hacer algo")
-        let celda = collectionView.dequeueReusableCell(withReuseIdentifier: IdentificadorDeCelda, for: indexPath)
+        let celda = collectionView.dequeueReusableCell(withReuseIdentifier: IdentificadorDeCelda, for: indexPath) as! VistaComentarios
         
         celda.tintColor = UIColor.brown
+        
+        celda.NombreDelUsuario.text = self.lista_Comentarios[indexPath.item].email
+        celda.CuerpoComentario.text = self.lista_Comentarios[indexPath.item].body
         
         return celda
     }
