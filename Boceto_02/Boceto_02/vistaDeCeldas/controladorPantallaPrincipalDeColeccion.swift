@@ -83,7 +83,7 @@ class controladorPantallaPrincipalDeColeccion: UICollectionViewController {
         
         return celda
     }
-    override func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("Se selecciono la celda\(indexPath)")
                 
                 let pantalla_de_publicacion = storyboard?.instantiateViewController(withIdentifier: "PantallaPublicacion") as! ControladorPantallaDelPost
