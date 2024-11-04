@@ -101,7 +101,6 @@ class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource {
         print("Aqui denberia hacer algo")
         let celda = collectionView.dequeueReusableCell(withReuseIdentifier: IdentificadorDeCelda, for: indexPath) as! VistaComentarios
         
-        celda.tintColor = UIColor.brown
         
         celda.NombreDelUsuario.text = self.lista_Comentarios[indexPath.item].email
         celda.CuerpoComentario.text = self.lista_Comentarios[indexPath.item].body
