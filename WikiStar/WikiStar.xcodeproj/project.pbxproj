@@ -16,6 +16,9 @@
 		FB978B8A2CDBD4700026A4A8 /* WikiStarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB978B892CDBD4700026A4A8 /* WikiStarTests.swift */; };
 		FB978B942CDBD4700026A4A8 /* WikiStarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB978B932CDBD4700026A4A8 /* WikiStarUITests.swift */; };
 		FB978B962CDBD4700026A4A8 /* WikiStarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB978B952CDBD4700026A4A8 /* WikiStarUITestsLaunchTests.swift */; };
+		FB978BA42CDBD9850026A4A8 /* fondoEstrellas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB978BA32CDBD9850026A4A8 /* fondoEstrellas.jpg */; };
+		FB978BA92CDBE0860026A4A8 /* Species.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB978BA82CDBE0860026A4A8 /* Species.swift */; };
+		FB978BAB2CDBE0B10026A4A8 /* SpeciesControladorPantalla.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB978BAA2CDBE0B10026A4A8 /* SpeciesControladorPantalla.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		FB978B8F2CDBD4700026A4A8 /* WikiStarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WikiStarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB978B932CDBD4700026A4A8 /* WikiStarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiStarUITests.swift; sourceTree = "<group>"; };
 		FB978B952CDBD4700026A4A8 /* WikiStarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiStarUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FB978BA32CDBD9850026A4A8 /* fondoEstrellas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fondoEstrellas.jpg; sourceTree = "<group>"; };
+		FB978BA82CDBE0860026A4A8 /* Species.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Species.swift; sourceTree = "<group>"; };
+		FB978BAA2CDBE0B10026A4A8 /* SpeciesControladorPantalla.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesControladorPantalla.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,8 @@
 		FB978B712CDBD4700026A4A8 /* WikiStar */ = {
 			isa = PBXGroup;
 			children = (
+				FB978BA22CDBD9720026A4A8 /* Imagenes */,
+				FB978BA52CDBDE1A0026A4A8 /* Especies */,
 				FB978B722CDBD4700026A4A8 /* AppDelegate.swift */,
 				FB978B742CDBD4700026A4A8 /* SceneDelegate.swift */,
 				FB978B762CDBD4700026A4A8 /* ViewController.swift */,
@@ -125,6 +133,23 @@
 				FB978B952CDBD4700026A4A8 /* WikiStarUITestsLaunchTests.swift */,
 			);
 			path = WikiStarUITests;
+			sourceTree = "<group>";
+		};
+		FB978BA22CDBD9720026A4A8 /* Imagenes */ = {
+			isa = PBXGroup;
+			children = (
+				FB978BA32CDBD9850026A4A8 /* fondoEstrellas.jpg */,
+			);
+			name = Imagenes;
+			sourceTree = "<group>";
+		};
+		FB978BA52CDBDE1A0026A4A8 /* Especies */ = {
+			isa = PBXGroup;
+			children = (
+				FB978BA82CDBE0860026A4A8 /* Species.swift */,
+				FB978BAA2CDBE0B10026A4A8 /* SpeciesControladorPantalla.swift */,
+			);
+			path = Especies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +258,7 @@
 			files = (
 				FB978B7C2CDBD4700026A4A8 /* Assets.xcassets in Resources */,
 				FB978B7F2CDBD4700026A4A8 /* Base in Resources */,
+				FB978BA42CDBD9850026A4A8 /* fondoEstrellas.jpg in Resources */,
 				FB978B7A2CDBD4700026A4A8 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,8 +284,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB978BA92CDBE0860026A4A8 /* Species.swift in Sources */,
 				FB978B772CDBD4700026A4A8 /* ViewController.swift in Sources */,
 				FB978B732CDBD4700026A4A8 /* AppDelegate.swift in Sources */,
+				FB978BAB2CDBE0B10026A4A8 /* SpeciesControladorPantalla.swift in Sources */,
 				FB978B752CDBD4700026A4A8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
