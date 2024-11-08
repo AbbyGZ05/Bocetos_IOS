@@ -3,20 +3,26 @@
 //  WikiStar
 //
 //  Created by alumno on 11/6/24.
-//
 
 import Foundation
 
-struct Species:     Identifiable, Codable{
-    let id = UUID().uuidString
+struct Especies: Codable{
+    let id : Int?
     var name : String
-    var average_height : Float
-    var average_lifespan : Int
+    var average_height : String
+    var average_lifespan : String
     var language : String
-    var homeworld: String
+    var homeworld: String?
     
     enum Codinhkeys : CodingKey {
         case name, average_height, average_lifespan, language, homeworld
     }
 }
+struct EspeciesRespuesta: Codable {
+        let count: Int
+        let next: String?
+        let previous: String?
+        let results: [Especies]
+    }
+
 
