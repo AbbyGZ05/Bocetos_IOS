@@ -20,11 +20,11 @@ class controladorPantallaPrincipalDeColeccion: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
          //Registrar la celda
-              collectionView.register(VistaDeCeldaEspecies.self, forCellWithReuseIdentifier: IdentificadorDeCelda)
+              //collectionView.register(VistaDeCeldaEspecies.self, forCellWithReuseIdentifier: IdentificadorDeCelda)
                 
                 // Obtener datos
         
-        let ubicacion = URL(string: url_api)!
+        /*let ubicacion = URL(string: url_api)!
         URLSession.shared.dataTask(with: ubicacion) { (datos, respuesta, error) in
             do {
                 if let especies_recibidas = datos {
@@ -42,10 +42,19 @@ class controladorPantallaPrincipalDeColeccion: UICollectionViewController {
                     print(respuesta)
                 }
             } catch {
-                print("Error \(error)")
+                print("Error :c \(error)")
             }
         }.resume()
 
+         */
+        
+        proveedorDeInfromacion.autoreferencia
+            .obtener_especies(que_hacer_al_recibir: {[weak self] (esepcies_descargads) in
+                self?.lista_de_especies = esepcies_descargads
+                DispatchQueue.main.async {
+                    self?.collectionView.reloadData()
+                }
+                print(esepcies_descargads)})
         
     }
     /*
@@ -78,41 +87,35 @@ class controladorPantallaPrincipalDeColeccion: UICollectionViewController {
         let celda: VistaDeCeldaEspecies = collectionView.dequeueReusableCell(withReuseIdentifier: IdentificadorDeCelda, for: indexPath) as! VistaDeCeldaEspecies
         
         
-        celda.etiqueta.text = self.lista_de_especies[indexPath.item].name ?? "Nombre Desconocido"
+        celda.etiqueta.text = self.lista_de_especies[indexPath.item].name
         
         
         return celda
     }
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("Se selecciono la celda\(indexPath)")
+
                 
-                /*let pantalla_de_especie = storyboard?.instantiateViewController(withIdentifier: "PantallaDeEspecie") as! ControladorPantallaInfoEspecie
-                
-                // pantalla_de_publicacion.id_publicacion = indexPath.item
-                pantalla_de_especie.id_especie = self.lista_de_especies[indexPath.item].id
-                
-                self.navigationController?.pushViewController(pantalla_de_especie, animated: true)
-                
-                //print(self.navigationController)*/
+                //print(self.navigationController)
         
-        if let pantalla_de_especie = storyboard?.instantiateViewController(withIdentifier: "PantallaDeEspecie") as? ControladorPantallaInfoEspecie {
+        if let pantalla_de_especie = storyboard?.instantiateViewController(withIdentifier: "PantallaDeEspeciesInfo") as? ControladorPantallaInfoEspecie {
             // Asegúrate de que 'id_especie' no sea nil
-            pantalla_de_especie.id_especie = self.lista_de_especies[indexPath.item].id
+            pantalla_de_especie.id_especie = indexPath.item
             self.navigationController?.pushViewController(pantalla_de_especie, animated: true)
         } else {
-            print("No se pudo encontrar el controlador de vista con el identificador 'PantallaDeEspecie'")
+            print("No se pudo encontrar el controlador de vista con el identificador 'PantallaDeEspecieInfo'")
         }
     }
     
-  /*  override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+ /* override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("Se seleciono la celda \(indexPath)")
         
-        let pantalla_de_publicacion = storyboard?.instantiateViewController(withIdentifier: "PantallaPublicacion") as! ControladorPantallaDelPost
+        let Pantalla_Info_Especie = storyboard?.instantiateViewController(withIdentifier: "PantallaDeEspeciesInfo") as! ControladorPantallaInfoEspecie
                 
-                self.navigationController?.pushViewController(pantalla_de_publicacion, animated: true)
+                self.navigationController?.pushViewController(Pantalla_Info_Especie, animated: true)
                 
-                print(self.navigationController)
-    }*/
+                print(self.navigationController)*/
+    }
     // MARK: UICollectionViewDelegate
     
     /*
@@ -144,4 +147,4 @@ class controladorPantallaPrincipalDeColeccion: UICollectionViewController {
      }
      */
     
-}
+

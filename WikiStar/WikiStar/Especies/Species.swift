@@ -15,14 +15,15 @@ struct Especies: Codable{
     var homeworld: String?
     
     enum Codinhkeys : CodingKey {
-        case name, average_height, average_lifespan, language, homeworld
+        case id, name, average_height, average_lifespan, language, homeworld
     }
 }
+
 struct EspeciesRespuesta: Codable {
         let count: Int
         let next: String?
         let previous: String?
         let results: [Especies]
-    }
+}
 
 

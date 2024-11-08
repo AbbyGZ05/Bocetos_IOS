@@ -27,7 +27,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Species"/>
                                 <connections>
-                                    <segue destination="uJO-Jq-wEm" kind="presentation" id="0fR-1R-DNm"/>
+                                    <segue destination="qyn-Mi-6bV" kind="presentation" id="0fR-1R-DNm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="HCX-i0-EgV">
@@ -71,7 +71,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140" y="-2"/>
+            <point key="canvasLocation" x="-373" y="-2"/>
         </scene>
         <!--Controlador Pantalla Principal De Coleccion-->
         <scene sceneID="KlH-GV-Ye1">
@@ -81,14 +81,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.3248546792" green="0.46823705809999999" blue="0.4535510472" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="oDX-ks-BC3">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="oDX-ks-BC3">
                             <size key="itemSize" width="323" height="200"/>
+                            <size key="estimatedItemSize" width="323" height="200"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="celda_pantalla_principal" reuseIdentifier="" id="NdE-My-IaK" customClass="VistaDeCeldaEspecies" customModule="WikiStar" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="celda_pantalla_principal" reuseIdentifier="PantallaDeEspeciesLista" id="NdE-My-IaK" customClass="VistaDeCeldaEspecies" customModule="WikiStar" customModuleProvider="target">
                                 <rect key="frame" x="35" y="0.0" width="323" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="FiU-IH-X9H">
@@ -107,15 +108,16 @@
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <size key="customSize" width="323" height="200"/>
                                 <connections>
-                                    <outlet property="etiqueta" destination="w7b-6r-E2N" id="GyI-JY-KHT"/>
+                                    <outlet property="etiqueta" destination="w7b-6r-E2N" id="5xG-o7-ohB"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
                     </collectionView>
+                    <navigationItem key="navigationItem" id="5uH-d9-PN8"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mTZ-TI-vvq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="915" y="-24"/>
+            <point key="canvasLocation" x="1872.5190839694656" y="-2.1126760563380285"/>
         </scene>
         <!--Controlador Pantalla Info Especie-->
         <scene sceneID="ee6-Vm-5Wh">
@@ -136,7 +138,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="n7o-uO-q63" customClass="VistaInfoEspecies" customModule="WikiStar" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PantallaDeEspeciesInfo" id="n7o-uO-q63" customClass="VistaInfoEspecies" customModule="WikiStar" customModuleProvider="target">
                                         <rect key="frame" x="41.666666666666664" y="0.0" width="278" height="241"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="1so-QA-K5S">
@@ -202,7 +204,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Va0-Ta-kqM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1674" y="-2"/>
+            <point key="canvasLocation" x="2599.2366412213742" y="-2.1126760563380285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ada-44-g5j">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qyn-Mi-6bV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Qjo-rt-ywe">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uJO-Jq-wEm" kind="relationship" relationship="rootViewController" id="Ykd-zd-E4Q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bn7-rJ-e1X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="945.80152671755718" y="-2.1126760563380285"/>
         </scene>
     </scenes>
     <resources>

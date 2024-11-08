@@ -31,10 +31,11 @@ class ControladorPantallaInfoEspecie: UIViewController, UICollectionViewDataSour
     // Método para obtener la información de la especie
     func realizar_descarga_de_informacion() {
         if self.especie == nil {
-            proveedor_De_Informacion.obtener_especie(id: self.id_especie ?? -1, que_hacer_al_recibir: { [weak self] (especies) in
+            proveedor_De_Informacion.obtener_especie(id: self.id_especie ?? -1 , que_hacer_al_recibir: { [weak self] (especies) in
                 self?.especie = especies
                 DispatchQueue.main.async {
                     self?.realizar_descarga_de_informacion()  // Llamar nuevamente si es necesario
+                    print(self?.especie)
                 }
             })
         }
