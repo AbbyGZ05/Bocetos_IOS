@@ -24,6 +24,11 @@
 		FB978BA42CDBD9850026A4A8 /* fondoEstrellas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB978BA32CDBD9850026A4A8 /* fondoEstrellas.jpg */; };
 		FB978BA92CDBE0860026A4A8 /* Species.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB978BA82CDBE0860026A4A8 /* Species.swift */; };
 		FB978BAB2CDBE0B10026A4A8 /* SpeciesControladorPantalla.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB978BAA2CDBE0B10026A4A8 /* SpeciesControladorPantalla.swift */; };
+		FBAF77392CE2682500F2B4FC /* PlanetasControladorPantalla.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAF77382CE2682500F2B4FC /* PlanetasControladorPantalla.swift */; };
+		FBAF773C2CE2692E00F2B4FC /* ProveedorInfoPlanetas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAF773B2CE2692E00F2B4FC /* ProveedorInfoPlanetas.swift */; };
+		FBAF773E2CE269FB00F2B4FC /* Planets.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAF773D2CE269FB00F2B4FC /* Planets.swift */; };
+		FBAF77402CE26C0900F2B4FC /* VistaDeCeldaPlanetas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAF773F2CE26C0900F2B4FC /* VistaDeCeldaPlanetas.swift */; };
+		FBAF77422CE26D1C00F2B4FC /* PantallaDePlanetasInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAF77412CE26D1C00F2B4FC /* PantallaDePlanetasInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +70,11 @@
 		FB978BA32CDBD9850026A4A8 /* fondoEstrellas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fondoEstrellas.jpg; sourceTree = "<group>"; };
 		FB978BA82CDBE0860026A4A8 /* Species.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Species.swift; sourceTree = "<group>"; };
 		FB978BAA2CDBE0B10026A4A8 /* SpeciesControladorPantalla.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesControladorPantalla.swift; sourceTree = "<group>"; };
+		FBAF77382CE2682500F2B4FC /* PlanetasControladorPantalla.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetasControladorPantalla.swift; sourceTree = "<group>"; };
+		FBAF773B2CE2692E00F2B4FC /* ProveedorInfoPlanetas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProveedorInfoPlanetas.swift; sourceTree = "<group>"; };
+		FBAF773D2CE269FB00F2B4FC /* Planets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planets.swift; sourceTree = "<group>"; };
+		FBAF773F2CE26C0900F2B4FC /* VistaDeCeldaPlanetas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaDeCeldaPlanetas.swift; sourceTree = "<group>"; };
+		FBAF77412CE26D1C00F2B4FC /* PantallaDePlanetasInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantallaDePlanetasInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				FB84C20F2CDD7C1F00D810FE /* Provedor_Informacion.swift */,
+				FBAF773B2CE2692E00F2B4FC /* ProveedorInfoPlanetas.swift */,
 			);
 			path = Provedor;
 			sourceTree = "<group>";
@@ -133,6 +144,7 @@
 			children = (
 				FB84C20E2CDD7BE600D810FE /* Provedor */,
 				FB978BA22CDBD9720026A4A8 /* Imagenes */,
+				FBAF77372CE267E200F2B4FC /* Planetas */,
 				FB978BA52CDBDE1A0026A4A8 /* Especies */,
 				FB978B722CDBD4700026A4A8 /* AppDelegate.swift */,
 				FB978B742CDBD4700026A4A8 /* SceneDelegate.swift */,
@@ -181,6 +193,17 @@
 				FB84C2112CDD7F5F00D810FE /* VistaInfoEspecies.swift */,
 			);
 			path = Especies;
+			sourceTree = "<group>";
+		};
+		FBAF77372CE267E200F2B4FC /* Planetas */ = {
+			isa = PBXGroup;
+			children = (
+				FBAF77382CE2682500F2B4FC /* PlanetasControladorPantalla.swift */,
+				FBAF773D2CE269FB00F2B4FC /* Planets.swift */,
+				FBAF773F2CE26C0900F2B4FC /* VistaDeCeldaPlanetas.swift */,
+				FBAF77412CE26D1C00F2B4FC /* PantallaDePlanetasInfo.swift */,
+			);
+			name = Planetas;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,12 +338,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBAF773C2CE2692E00F2B4FC /* ProveedorInfoPlanetas.swift in Sources */,
+				FBAF773E2CE269FB00F2B4FC /* Planets.swift in Sources */,
 				FB84C2122CDD7F5F00D810FE /* VistaInfoEspecies.swift in Sources */,
 				FB978BA92CDBE0860026A4A8 /* Species.swift in Sources */,
 				FB84C2082CDD697F00D810FE /* VistaDeCeldaEspecies.swift in Sources */,
 				FB978B772CDBD4700026A4A8 /* ViewController.swift in Sources */,
+				FBAF77422CE26D1C00F2B4FC /* PantallaDePlanetasInfo.swift in Sources */,
+				FBAF77402CE26C0900F2B4FC /* VistaDeCeldaPlanetas.swift in Sources */,
 				FB84C20A2CDD722800D810FE /* ControladorPantallaInfoEspecie.swift in Sources */,
 				FB978B732CDBD4700026A4A8 /* AppDelegate.swift in Sources */,
+				FBAF77392CE2682500F2B4FC /* PlanetasControladorPantalla.swift in Sources */,
 				FB978BAB2CDBE0B10026A4A8 /* SpeciesControladorPantalla.swift in Sources */,
 				FB84C2102CDD7C1F00D810FE /* Provedor_Informacion.swift in Sources */,
 				FB978B752CDBD4700026A4A8 /* SceneDelegate.swift in Sources */,

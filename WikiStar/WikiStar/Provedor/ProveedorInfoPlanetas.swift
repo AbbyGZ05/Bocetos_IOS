@@ -1,16 +1,16 @@
 //
-//  Provedor_Informacion.swift
+//  ProveedorInfoPlanetas.swift
 //  WikiStar
 //
-//  Created by alumno on 11/7/24.
+//  Created by alumno on 11/11/24.
 //
 
 import Foundation
 import UIKit
 
-class proveedorDeInfromacion{
+class ProveedorInfoPlanetas{
     let url_de_informacion = "https://swapi.dev/api"
-    var  lista_de_especies: [Especies] = []
+    var  lista_de_planetas: [Planetas] = []
     
     /*
     static var autoreferencia: ProveedorDePublicaciones = {
@@ -19,19 +19,19 @@ class proveedorDeInfromacion{
         return instancia
     }()
      */
-    static var autoreferencia = proveedorDeInfromacion()
+    static var autoreferencia = ProveedorInfoPlanetas()
     
     private init() {}
     
-    func obtener_especies(que_hacer_al_recibir: @escaping ([Especies]) -> Void) {
+    func obtener_planetas(que_hacer_al_recibir: @escaping ([Planetas]) -> Void) {
         /// Acmodamos la url para descargar en esta funcion los post directamente
-        let ubicacion = URL(string: "\(url_de_informacion)/species/")!
+        let ubicacion = URL(string: "\(url_de_informacion)/planets/")!
         URLSession.shared.dataTask(with: ubicacion) {
                 (datos, respuesta, error) in do {
-                    if let especies_recibidas = datos{
-                        let prueba_de_interpretacion_de_datos = try JSONDecoder().decode(EspeciesRespuesta.self, from: especies_recibidas)
+                    if let planetas_recibidos = datos{
+                        let prueba_de_interpretacion_de_datos = try JSONDecoder().decode(PlanetasRespuesta.self, from: planetas_recibidos)
                         
-                        self.lista_de_especies = prueba_de_interpretacion_de_datos.results
+                        self.lista_de_planetas = prueba_de_interpretacion_de_datos.results
                         //print(prueba_de_interpretacion_de_datos)
                         que_hacer_al_recibir(prueba_de_interpretacion_de_datos.results)
                     }
@@ -44,14 +44,14 @@ class proveedorDeInfromacion{
         }.resume()
     }
     
-    func obtener_especie(id: Int?, que_hacer_al_recibir: @escaping (
-        Especies) -> Void) {
+    func obtener_planeta(id: Int?, que_hacer_al_recibir: @escaping (
+        Planetas) -> Void) {
      
-            print(lista_de_especies)
-            que_hacer_al_recibir(lista_de_especies[id!])
+            print(lista_de_planetas)
+            que_hacer_al_recibir(lista_de_planetas[id!])
     }
     
-    func realizar_subida_de_informacion(Especie_nueva: Especies) {
+    func realizar_subida_de_informacion(Planeta_nueva: Planetas) {
         // func obtener_publicaicones() async throws -> [Publicacion] {
         let ubicacion = URL(string: url_de_informacion)!
         URLSession.shared.dataTask(with: ubicacion) {
@@ -62,13 +62,13 @@ class proveedorDeInfromacion{
     
     // func obtener_publicaicones() async throws -> [Publicacion] {
    
-    func obtener_informacion_de_la_especie(id: Int, que_hacer_al_recibir: @escaping ([Especies]) -> Void) {
+    func obtener_informacion_del_planeta(id: Int, que_hacer_al_recibir: @escaping ([Planetas]) -> Void) {
             /// Acmodamos la url para descargar en esta funcion los post directamente
             let ubicacion = URL(string: "\(url_de_informacion)posts/\(id)/informacion")!
             URLSession.shared.dataTask(with: ubicacion) {
                     (datos, respuesta, error) in do {
-                        if let especies_recibidas = datos{
-                            let prueba_de_interpretacion_de_datos = try JSONDecoder().decode([Especies].self, from: especies_recibidas)
+                        if let planetas_recibidos = datos{
+                            let prueba_de_interpretacion_de_datos = try JSONDecoder().decode([Planetas].self, from: planetas_recibidos)
                             
                             que_hacer_al_recibir(prueba_de_interpretacion_de_datos)
                         }
