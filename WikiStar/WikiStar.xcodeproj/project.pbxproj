@@ -29,6 +29,16 @@
 		FBAF773E2CE269FB00F2B4FC /* Planets.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAF773D2CE269FB00F2B4FC /* Planets.swift */; };
 		FBAF77402CE26C0900F2B4FC /* VistaDeCeldaPlanetas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAF773F2CE26C0900F2B4FC /* VistaDeCeldaPlanetas.swift */; };
 		FBAF77422CE26D1C00F2B4FC /* PantallaDePlanetasInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAF77412CE26D1C00F2B4FC /* PantallaDePlanetasInfo.swift */; };
+		FBD957732CE3FB9500F203AA /* Vehiculos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD957722CE3FB9500F203AA /* Vehiculos.swift */; };
+		FBD957752CE3FCEB00F203AA /* VehiculosControladorDePantalla.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD957742CE3FCEB00F203AA /* VehiculosControladorDePantalla.swift */; };
+		FBD957772CE3FEA700F203AA /* VistaDeCeldaVehiculos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD957762CE3FEA700F203AA /* VistaDeCeldaVehiculos.swift */; };
+		FBD957792CE3FF3400F203AA /* PantallaVehiculosInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD957782CE3FF3400F203AA /* PantallaVehiculosInfo.swift */; };
+		FBD9577B2CE3FF9200F203AA /* ProveedorInfoVehiculos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD9577A2CE3FF9200F203AA /* ProveedorInfoVehiculos.swift */; };
+		FBD9577E2CE40B3000F203AA /* Naves.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD9577D2CE40B3000F203AA /* Naves.swift */; };
+		FBD957802CE40B8A00F203AA /* NavesControladorPantalla.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD9577F2CE40B8A00F203AA /* NavesControladorPantalla.swift */; };
+		FBD957822CE40E5100F203AA /* VistaDeCeldaNaves.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD957812CE40E5100F203AA /* VistaDeCeldaNaves.swift */; };
+		FBD957842CE40EEC00F203AA /* PantallaDeNavesInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD957832CE40EEC00F203AA /* PantallaDeNavesInfo.swift */; };
+		FBD957862CE40F1F00F203AA /* ProveedorInfoNaves.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD957852CE40F1F00F203AA /* ProveedorInfoNaves.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +85,16 @@
 		FBAF773D2CE269FB00F2B4FC /* Planets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planets.swift; sourceTree = "<group>"; };
 		FBAF773F2CE26C0900F2B4FC /* VistaDeCeldaPlanetas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaDeCeldaPlanetas.swift; sourceTree = "<group>"; };
 		FBAF77412CE26D1C00F2B4FC /* PantallaDePlanetasInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantallaDePlanetasInfo.swift; sourceTree = "<group>"; };
+		FBD957722CE3FB9500F203AA /* Vehiculos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehiculos.swift; sourceTree = "<group>"; };
+		FBD957742CE3FCEB00F203AA /* VehiculosControladorDePantalla.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiculosControladorDePantalla.swift; sourceTree = "<group>"; };
+		FBD957762CE3FEA700F203AA /* VistaDeCeldaVehiculos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaDeCeldaVehiculos.swift; sourceTree = "<group>"; };
+		FBD957782CE3FF3400F203AA /* PantallaVehiculosInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantallaVehiculosInfo.swift; sourceTree = "<group>"; };
+		FBD9577A2CE3FF9200F203AA /* ProveedorInfoVehiculos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProveedorInfoVehiculos.swift; sourceTree = "<group>"; };
+		FBD9577D2CE40B3000F203AA /* Naves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Naves.swift; sourceTree = "<group>"; };
+		FBD9577F2CE40B8A00F203AA /* NavesControladorPantalla.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavesControladorPantalla.swift; sourceTree = "<group>"; };
+		FBD957812CE40E5100F203AA /* VistaDeCeldaNaves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaDeCeldaNaves.swift; sourceTree = "<group>"; };
+		FBD957832CE40EEC00F203AA /* PantallaDeNavesInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantallaDeNavesInfo.swift; sourceTree = "<group>"; };
+		FBD957852CE40F1F00F203AA /* ProveedorInfoNaves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProveedorInfoNaves.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +135,8 @@
 			children = (
 				FB84C20F2CDD7C1F00D810FE /* Provedor_Informacion.swift */,
 				FBAF773B2CE2692E00F2B4FC /* ProveedorInfoPlanetas.swift */,
+				FBD9577A2CE3FF9200F203AA /* ProveedorInfoVehiculos.swift */,
+				FBD957852CE40F1F00F203AA /* ProveedorInfoNaves.swift */,
 			);
 			path = Provedor;
 			sourceTree = "<group>";
@@ -142,6 +164,9 @@
 		FB978B712CDBD4700026A4A8 /* WikiStar */ = {
 			isa = PBXGroup;
 			children = (
+				FBD9577C2CE4096200F203AA /* Naves */,
+				FBD957702CE3F9F200F203AA /* Vehiculos */,
+				FB84C20B2CDD7B9F00D810FE /* Estilos */,
 				FB84C20E2CDD7BE600D810FE /* Provedor */,
 				FB978BA22CDBD9720026A4A8 /* Imagenes */,
 				FBAF77372CE267E200F2B4FC /* Planetas */,
@@ -189,7 +214,6 @@
 				FB978BAA2CDBE0B10026A4A8 /* SpeciesControladorPantalla.swift */,
 				FB84C2072CDD697F00D810FE /* VistaDeCeldaEspecies.swift */,
 				FB84C2092CDD722800D810FE /* ControladorPantallaInfoEspecie.swift */,
-				FB84C20B2CDD7B9F00D810FE /* Estilos */,
 				FB84C2112CDD7F5F00D810FE /* VistaInfoEspecies.swift */,
 			);
 			path = Especies;
@@ -204,6 +228,29 @@
 				FBAF77412CE26D1C00F2B4FC /* PantallaDePlanetasInfo.swift */,
 			);
 			name = Planetas;
+			sourceTree = "<group>";
+		};
+		FBD957702CE3F9F200F203AA /* Vehiculos */ = {
+			isa = PBXGroup;
+			children = (
+				FBD957722CE3FB9500F203AA /* Vehiculos.swift */,
+				FBD957742CE3FCEB00F203AA /* VehiculosControladorDePantalla.swift */,
+				FBD957762CE3FEA700F203AA /* VistaDeCeldaVehiculos.swift */,
+				FBD957782CE3FF3400F203AA /* PantallaVehiculosInfo.swift */,
+			);
+			name = Vehiculos;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		FBD9577C2CE4096200F203AA /* Naves */ = {
+			isa = PBXGroup;
+			children = (
+				FBD9577D2CE40B3000F203AA /* Naves.swift */,
+				FBD9577F2CE40B8A00F203AA /* NavesControladorPantalla.swift */,
+				FBD957812CE40E5100F203AA /* VistaDeCeldaNaves.swift */,
+				FBD957832CE40EEC00F203AA /* PantallaDeNavesInfo.swift */,
+			);
+			path = Naves;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,19 +386,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBAF773C2CE2692E00F2B4FC /* ProveedorInfoPlanetas.swift in Sources */,
+				FBD957862CE40F1F00F203AA /* ProveedorInfoNaves.swift in Sources */,
 				FBAF773E2CE269FB00F2B4FC /* Planets.swift in Sources */,
 				FB84C2122CDD7F5F00D810FE /* VistaInfoEspecies.swift in Sources */,
+				FBD9577B2CE3FF9200F203AA /* ProveedorInfoVehiculos.swift in Sources */,
 				FB978BA92CDBE0860026A4A8 /* Species.swift in Sources */,
 				FB84C2082CDD697F00D810FE /* VistaDeCeldaEspecies.swift in Sources */,
 				FB978B772CDBD4700026A4A8 /* ViewController.swift in Sources */,
+				FBD957792CE3FF3400F203AA /* PantallaVehiculosInfo.swift in Sources */,
 				FBAF77422CE26D1C00F2B4FC /* PantallaDePlanetasInfo.swift in Sources */,
+				FBD957752CE3FCEB00F203AA /* VehiculosControladorDePantalla.swift in Sources */,
 				FBAF77402CE26C0900F2B4FC /* VistaDeCeldaPlanetas.swift in Sources */,
 				FB84C20A2CDD722800D810FE /* ControladorPantallaInfoEspecie.swift in Sources */,
 				FB978B732CDBD4700026A4A8 /* AppDelegate.swift in Sources */,
+				FBD957772CE3FEA700F203AA /* VistaDeCeldaVehiculos.swift in Sources */,
 				FBAF77392CE2682500F2B4FC /* PlanetasControladorPantalla.swift in Sources */,
 				FB978BAB2CDBE0B10026A4A8 /* SpeciesControladorPantalla.swift in Sources */,
+				FBD957732CE3FB9500F203AA /* Vehiculos.swift in Sources */,
 				FB84C2102CDD7C1F00D810FE /* Provedor_Informacion.swift in Sources */,
+				FBD9577E2CE40B3000F203AA /* Naves.swift in Sources */,
+				FBD957842CE40EEC00F203AA /* PantallaDeNavesInfo.swift in Sources */,
 				FB978B752CDBD4700026A4A8 /* SceneDelegate.swift in Sources */,
+				FBD957802CE40B8A00F203AA /* NavesControladorPantalla.swift in Sources */,
+				FBD957822CE40E5100F203AA /* VistaDeCeldaNaves.swift in Sources */,
 				FB84C20D2CDD7BC000D810FE /* mod_navegador_principal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

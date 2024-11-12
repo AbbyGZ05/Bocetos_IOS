@@ -1,5 +1,6 @@
 
 
+
 //
 //  controladorPantallaPrincipalDeColeccion.swift
 //  Boceto_02
@@ -11,21 +12,21 @@ import UIKit
 
 
 
-class PlanatasControladorPantalla: UICollectionViewController {
+class VehiculosControladorDePantalla: UICollectionViewController {
     
-    private var lista_de_planetas: [Planetas] = []
+    private var lista_de_vehiculos: [Vehiculos] = []
     
-    private let IdentificadorDeCeldaPlaneta = "PantallaDePlanetasLista"
-    private let url_api = "https://swapi.dev/api/planets/"
+    private let IdentificadorDeCeldaVehiculos = "PantallaDeVehiculosLista"
+    private let url_api = "https://swapi.dev/api/vehicles/"
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
  
         
-        ProveedorInfoPlanetas.autoreferencia
-            .obtener_planetas(que_hacer_al_recibir: {[weak self] (planetas_descargados) in
-                self?.lista_de_planetas = planetas_descargados
+        ProveedorInfoVehiculos.autoreferencia
+            .obtener_vehiculos(que_hacer_al_recibir: {[weak self] (vehiculos_descargados) in
+                self?.lista_de_vehiculos = vehiculos_descargados
                 DispatchQueue.main.async {
                     self?.collectionView.reloadData()
                 }
@@ -53,21 +54,17 @@ class PlanatasControladorPantalla: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return self.lista_de_planetas.count
+        return self.lista_de_vehiculos.count
     }
     
     //funcion para identificar y crear cada una de las  celdas en el controlaodr
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let celda: VistaDeCeldaPlanetas = collectionView.dequeueReusableCell(withReuseIdentifier: IdentificadorDeCeldaPlaneta, for: indexPath) as! VistaDeCeldaPlanetas
+        let celda: VistaDeCeldaVehiculos = collectionView.dequeueReusableCell(withReuseIdentifier: IdentificadorDeCeldaVehiculos, for: indexPath) as! VistaDeCeldaVehiculos
         
 
         //celda.etiquetaPlaneta.text = self.lista_de_planetas[indexPath.item].name
-        celda.etiquetaPlaneta.text = self.lista_de_planetas[indexPath.item].name
-        print(self.lista_de_planetas[indexPath.item].name)
-
-
-        
+        celda.etiquetaVehiculos.text = self.lista_de_vehiculos[indexPath.item].name
         
         return celda
     }
@@ -77,12 +74,12 @@ class PlanatasControladorPantalla: UICollectionViewController {
                 
                 //print(self.navigationController)
         
-        if let pantalla_de_planetas = storyboard?.instantiateViewController(withIdentifier: "PantallaDePlanetasInfo") as? PantallaDePlanetasInfo{
+        if let pantalla_de_vehiculos = storyboard?.instantiateViewController(withIdentifier: "PantallaVehiculosInfo") as? PantallaVehiculosInfo{
             // Asegúrate de que 'id_especie' se pase correctamente
             // Si tienes un array o una lista de especies, deberías pasar el 'id' correcto
             // Aquí asumo que 'indexPath.item' es el índice de un arreglo de especies, si es necesario
-            pantalla_de_planetas.id_planeta = indexPath.item  // O usa el valor de especie adecuado
-            self.navigationController?.pushViewController(pantalla_de_planetas, animated: true)
+            pantalla_de_vehiculos.id_vehiculo = indexPath.item  // O usa el valor de especie adecuado
+            self.navigationController?.pushViewController(pantalla_de_vehiculos, animated: true)
         } else {
             print("No se pudo encontrar el controlador de vista con el identificador 'PantallaDeplanetaInfo'")
         }

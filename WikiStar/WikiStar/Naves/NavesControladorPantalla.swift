@@ -11,21 +11,21 @@ import UIKit
 
 
 
-class PlanatasControladorPantalla: UICollectionViewController {
+class NavesControladorPantalla: UICollectionViewController {
     
-    private var lista_de_planetas: [Planetas] = []
+    private var lista_de_naves: [Naves] = []
     
-    private let IdentificadorDeCeldaPlaneta = "PantallaDePlanetasLista"
-    private let url_api = "https://swapi.dev/api/planets/"
+    private let IdentificadorDeCeldaNave = "PantallaDeNavesLista"
+    private let url_api = "https://swapi.dev/api/starships/"
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
  
         
-        ProveedorInfoPlanetas.autoreferencia
-            .obtener_planetas(que_hacer_al_recibir: {[weak self] (planetas_descargados) in
-                self?.lista_de_planetas = planetas_descargados
+        ProveedorInfoNaves.autoreferencia
+            .obtener_naves(que_hacer_al_recibir: {[weak self] (naves_descargadas) in
+                self?.lista_de_naves = naves_descargadas
                 DispatchQueue.main.async {
                     self?.collectionView.reloadData()
                 }
@@ -53,18 +53,17 @@ class PlanatasControladorPantalla: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return self.lista_de_planetas.count
+        return self.lista_de_naves.count
     }
     
     //funcion para identificar y crear cada una de las  celdas en el controlaodr
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let celda: VistaDeCeldaPlanetas = collectionView.dequeueReusableCell(withReuseIdentifier: IdentificadorDeCeldaPlaneta, for: indexPath) as! VistaDeCeldaPlanetas
-        
+        let celda: VistaDeCeldaNaves = collectionView.dequeueReusableCell(withReuseIdentifier: IdentificadorDeCeldaNave, for: indexPath) as! VistaDeCeldaNaves
 
         //celda.etiquetaPlaneta.text = self.lista_de_planetas[indexPath.item].name
-        celda.etiquetaPlaneta.text = self.lista_de_planetas[indexPath.item].name
-        print(self.lista_de_planetas[indexPath.item].name)
+        celda.etiquetaNaves.text = self.lista_de_naves[indexPath.item].name
+        print(self.lista_de_naves[indexPath.item].name)
 
 
         
@@ -77,14 +76,14 @@ class PlanatasControladorPantalla: UICollectionViewController {
                 
                 //print(self.navigationController)
         
-        if let pantalla_de_planetas = storyboard?.instantiateViewController(withIdentifier: "PantallaDePlanetasInfo") as? PantallaDePlanetasInfo{
+        if let pantalla_de_naves = storyboard?.instantiateViewController(withIdentifier: "PantallaDeNavesInfo") as? PantallaDeNavesInfo{
             // Asegúrate de que 'id_especie' se pase correctamente
             // Si tienes un array o una lista de especies, deberías pasar el 'id' correcto
             // Aquí asumo que 'indexPath.item' es el índice de un arreglo de especies, si es necesario
-            pantalla_de_planetas.id_planeta = indexPath.item  // O usa el valor de especie adecuado
-            self.navigationController?.pushViewController(pantalla_de_planetas, animated: true)
+            pantalla_de_naves.id_nave = indexPath.item  // O usa el valor de especie adecuado
+            self.navigationController?.pushViewController(pantalla_de_naves, animated: true)
         } else {
-            print("No se pudo encontrar el controlador de vista con el identificador 'PantallaDeplanetaInfo'")
+            print("No se pudo encontrar el controlador de vista con el identificador 'PantallaDenavesInfo'")
         }
 
     }
