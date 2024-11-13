@@ -39,6 +39,20 @@
 		FBD957822CE40E5100F203AA /* VistaDeCeldaNaves.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD957812CE40E5100F203AA /* VistaDeCeldaNaves.swift */; };
 		FBD957842CE40EEC00F203AA /* PantallaDeNavesInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD957832CE40EEC00F203AA /* PantallaDeNavesInfo.swift */; };
 		FBD957862CE40F1F00F203AA /* ProveedorInfoNaves.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD957852CE40F1F00F203AA /* ProveedorInfoNaves.swift */; };
+		FBD957B42CE41B6200F203AA /* planetas.png in Resources */ = {isa = PBXBuildFile; fileRef = FBD957AF2CE41B6200F203AA /* planetas.png */; };
+		FBD957B52CE41B6200F203AA /* BbyYoda.png in Resources */ = {isa = PBXBuildFile; fileRef = FBD957B02CE41B6200F203AA /* BbyYoda.png */; };
+		FBD957B62CE41B6200F203AA /* Naves.png in Resources */ = {isa = PBXBuildFile; fileRef = FBD957B12CE41B6200F203AA /* Naves.png */; };
+		FBD957B72CE41B6200F203AA /* Vehiculos.png in Resources */ = {isa = PBXBuildFile; fileRef = FBD957B22CE41B6200F203AA /* Vehiculos.png */; };
+		FBD957B82CE41B6200F203AA /* especies.png in Resources */ = {isa = PBXBuildFile; fileRef = FBD957B32CE41B6200F203AA /* especies.png */; };
+		FBD957BD2CE41CE700F203AA /* Stjldbl2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FBD957BA2CE41CE600F203AA /* Stjldbl2.ttf */; };
+		FBD957BE2CE41CE700F203AA /* Stjldbl1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FBD957BB2CE41CE600F203AA /* Stjldbl1.ttf */; };
+		FBD957BF2CE41CE700F203AA /* Strjmono.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FBD957BC2CE41CE700F203AA /* Strjmono.ttf */; };
+		FBD957C12CE41CF800F203AA /* STJEDISE.TTF in Resources */ = {isa = PBXBuildFile; fileRef = FBD957C02CE41CF800F203AA /* STJEDISE.TTF */; };
+		FBD957C32CE41D1300F203AA /* Starjout.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FBD957C22CE41D1300F203AA /* Starjout.ttf */; };
+		FBD957C62CE41D2200F203AA /* Starjedi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FBD957C42CE41D2200F203AA /* Starjedi.ttf */; };
+		FBD957C72CE41D2200F203AA /* Starjhol.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FBD957C52CE41D2200F203AA /* Starjhol.ttf */; };
+		FBD957C92CE420D100F203AA /* fondoEespecies.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBD957C82CE420D100F203AA /* fondoEespecies.jpg */; };
+		FBD957CB2CE424FD00F203AA /* PRUEBA.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBD957CA2CE424FD00F203AA /* PRUEBA.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +109,20 @@
 		FBD957812CE40E5100F203AA /* VistaDeCeldaNaves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaDeCeldaNaves.swift; sourceTree = "<group>"; };
 		FBD957832CE40EEC00F203AA /* PantallaDeNavesInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantallaDeNavesInfo.swift; sourceTree = "<group>"; };
 		FBD957852CE40F1F00F203AA /* ProveedorInfoNaves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProveedorInfoNaves.swift; sourceTree = "<group>"; };
+		FBD957AF2CE41B6200F203AA /* planetas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = planetas.png; path = "../../../../Downloads/iloveimg-resized(3)/planetas.png"; sourceTree = "<group>"; };
+		FBD957B02CE41B6200F203AA /* BbyYoda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BbyYoda.png; path = "../../../../Downloads/iloveimg-resized(3)/BbyYoda.png"; sourceTree = "<group>"; };
+		FBD957B12CE41B6200F203AA /* Naves.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Naves.png; path = "../../../../Downloads/iloveimg-resized(3)/Naves.png"; sourceTree = "<group>"; };
+		FBD957B22CE41B6200F203AA /* Vehiculos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Vehiculos.png; path = "../../../../Downloads/iloveimg-resized(3)/Vehiculos.png"; sourceTree = "<group>"; };
+		FBD957B32CE41B6200F203AA /* especies.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = especies.png; path = "../../../../Downloads/iloveimg-resized(3)/especies.png"; sourceTree = "<group>"; };
+		FBD957BA2CE41CE600F203AA /* Stjldbl2.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Stjldbl2.ttf; sourceTree = "<group>"; };
+		FBD957BB2CE41CE600F203AA /* Stjldbl1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Stjldbl1.ttf; sourceTree = "<group>"; };
+		FBD957BC2CE41CE700F203AA /* Strjmono.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Strjmono.ttf; sourceTree = "<group>"; };
+		FBD957C02CE41CF800F203AA /* STJEDISE.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = STJEDISE.TTF; sourceTree = "<group>"; };
+		FBD957C22CE41D1300F203AA /* Starjout.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjout.ttf; sourceTree = "<group>"; };
+		FBD957C42CE41D2200F203AA /* Starjedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjedi.ttf; sourceTree = "<group>"; };
+		FBD957C52CE41D2200F203AA /* Starjhol.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjhol.ttf; sourceTree = "<group>"; };
+		FBD957C82CE420D100F203AA /* fondoEespecies.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fondoEespecies.jpg; sourceTree = "<group>"; };
+		FBD957CA2CE424FD00F203AA /* PRUEBA.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PRUEBA.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +192,7 @@
 		FB978B712CDBD4700026A4A8 /* WikiStar */ = {
 			isa = PBXGroup;
 			children = (
+				FBD957B92CE41CB600F203AA /* Tipos */,
 				FBD9577C2CE4096200F203AA /* Naves */,
 				FBD957702CE3F9F200F203AA /* Vehiculos */,
 				FB84C20B2CDD7B9F00D810FE /* Estilos */,
@@ -203,6 +232,13 @@
 			isa = PBXGroup;
 			children = (
 				FB978BA32CDBD9850026A4A8 /* fondoEstrellas.jpg */,
+				FBD957B02CE41B6200F203AA /* BbyYoda.png */,
+				FBD957C82CE420D100F203AA /* fondoEespecies.jpg */,
+				FBD957CA2CE424FD00F203AA /* PRUEBA.jpg */,
+				FBD957B32CE41B6200F203AA /* especies.png */,
+				FBD957B12CE41B6200F203AA /* Naves.png */,
+				FBD957AF2CE41B6200F203AA /* planetas.png */,
+				FBD957B22CE41B6200F203AA /* Vehiculos.png */,
 			);
 			name = Imagenes;
 			sourceTree = "<group>";
@@ -251,6 +287,20 @@
 				FBD957832CE40EEC00F203AA /* PantallaDeNavesInfo.swift */,
 			);
 			path = Naves;
+			sourceTree = "<group>";
+		};
+		FBD957B92CE41CB600F203AA /* Tipos */ = {
+			isa = PBXGroup;
+			children = (
+				FBD957C42CE41D2200F203AA /* Starjedi.ttf */,
+				FBD957C52CE41D2200F203AA /* Starjhol.ttf */,
+				FBD957C22CE41D1300F203AA /* Starjout.ttf */,
+				FBD957C02CE41CF800F203AA /* STJEDISE.TTF */,
+				FBD957BB2CE41CE600F203AA /* Stjldbl1.ttf */,
+				FBD957BA2CE41CE600F203AA /* Stjldbl2.ttf */,
+				FBD957BC2CE41CE700F203AA /* Strjmono.ttf */,
+			);
+			path = Tipos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,10 +407,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBD957C32CE41D1300F203AA /* Starjout.ttf in Resources */,
+				FBD957BF2CE41CE700F203AA /* Strjmono.ttf in Resources */,
+				FBD957C92CE420D100F203AA /* fondoEespecies.jpg in Resources */,
 				FB978B7C2CDBD4700026A4A8 /* Assets.xcassets in Resources */,
+				FBD957CB2CE424FD00F203AA /* PRUEBA.jpg in Resources */,
 				FB978B7F2CDBD4700026A4A8 /* Base in Resources */,
+				FBD957C12CE41CF800F203AA /* STJEDISE.TTF in Resources */,
+				FBD957B72CE41B6200F203AA /* Vehiculos.png in Resources */,
+				FBD957B52CE41B6200F203AA /* BbyYoda.png in Resources */,
+				FBD957BE2CE41CE700F203AA /* Stjldbl1.ttf in Resources */,
 				FB978BA42CDBD9850026A4A8 /* fondoEstrellas.jpg in Resources */,
+				FBD957BD2CE41CE700F203AA /* Stjldbl2.ttf in Resources */,
 				FB978B7A2CDBD4700026A4A8 /* Base in Resources */,
+				FBD957B82CE41B6200F203AA /* especies.png in Resources */,
+				FBD957B62CE41B6200F203AA /* Naves.png in Resources */,
+				FBD957C62CE41D2200F203AA /* Starjedi.ttf in Resources */,
+				FBD957B42CE41B6200F203AA /* planetas.png in Resources */,
+				FBD957C72CE41D2200F203AA /* Starjhol.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

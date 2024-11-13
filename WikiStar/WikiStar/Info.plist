@@ -4,6 +4,8 @@
 <dict>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
+		<key></key>
+		<false/>
 		<key>UIApplicationSupportsMultipleScenes</key>
 		<false/>
 		<key>UISceneConfigurations</key>
@@ -21,5 +23,15 @@
 			</array>
 		</dict>
 	</dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Starjedi.ttf</string>
+		<string>Starjhol.ttf</string>
+		<string>Starjout.ttf</string>
+		<string>STJEDISE.ttf</string>
+		<string>Stjldbl1.ttf</string>
+		<string>Stjldbl2.ttf</string>
+		<string>Strjmono.ttf</string>
+	</array>
 </dict>
 </plist>

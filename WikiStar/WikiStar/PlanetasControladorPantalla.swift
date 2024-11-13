@@ -64,6 +64,7 @@ class PlanatasControladorPantalla: UICollectionViewController {
 
         //celda.etiquetaPlaneta.text = self.lista_de_planetas[indexPath.item].name
         celda.etiquetaPlaneta.text = self.lista_de_planetas[indexPath.item].name
+        
         print(self.lista_de_planetas[indexPath.item].name)
 
 

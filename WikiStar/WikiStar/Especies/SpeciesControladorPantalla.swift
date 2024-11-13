@@ -76,6 +76,8 @@ class controladorPantallaPrincipalDeColeccion: UICollectionViewController {
             // Si tienes un array o una lista de especies, deberías pasar el 'id' correcto
             // Aquí asumo que 'indexPath.item' es el índice de un arreglo de especies, si es necesario
             pantalla_de_especie.id_especie = indexPath.item  // O usa el valor de especie adecuado
+            
+            
             self.navigationController?.pushViewController(pantalla_de_especie, animated: true)
         } else {
             print("No se pudo encontrar el controlador de vista con el identificador 'PantallaDeEspecieInfo'")

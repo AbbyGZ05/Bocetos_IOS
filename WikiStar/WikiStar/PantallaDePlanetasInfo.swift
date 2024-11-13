@@ -16,7 +16,7 @@ class PantallaDePlanetasInfo: UIViewController{
     
     
     public var id_planeta: Int?
-        public var planeta: Planetas?
+    public var planeta: Planetas?
         
         override func viewDidLoad() {
             super.viewDidLoad()
