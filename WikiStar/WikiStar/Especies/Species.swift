@@ -17,6 +17,7 @@ struct Especies: Codable{
     enum Codinhkeys : CodingKey {
         case id, name, average_height, average_lifespan, language, homeworld
     }
+    
 }
 
 struct EspeciesRespuesta: Codable {

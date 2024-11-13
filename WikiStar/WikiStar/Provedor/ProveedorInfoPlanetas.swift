@@ -46,9 +46,32 @@ class ProveedorInfoPlanetas{
     
     func obtener_planeta(id: Int?, que_hacer_al_recibir: @escaping (
         Planetas) -> Void) {
-     
-            print(lista_de_planetas)
-            que_hacer_al_recibir(lista_de_planetas[id!])
+            if(lista_de_planetas.count > 1){
+                print(lista_de_planetas)
+                if let planeta = self.lista_de_planetas.first(where: {$0.id == id}){
+                    que_hacer_al_recibir(planeta)
+                }
+            }
+            
+            else{
+                let ubicacion = URL(string: "\(url_de_informacion)/planets/\(id)")!
+                URLSession.shared.dataTask(with: ubicacion) {
+                        (datos, respuesta, error) in do {
+                            if let planetas_recibidos = datos{
+                                let prueba_de_interpretacion_de_datos = try JSONDecoder().decode(Planetas.self, from: planetas_recibidos)
+                                
+                                
+                                //print(prueba_de_interpretacion_de_datos)
+                                que_hacer_al_recibir(prueba_de_interpretacion_de_datos)
+                            }
+                            else {
+                                print(respuesta)
+                            }
+                        } catch {
+                            print("Error -_- \(#function)")
+                        }
+                }.resume()
+            }
     }
     
     func realizar_subida_de_informacion(Planeta_nueva: Planetas) {
