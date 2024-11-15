@@ -3,12 +3,16 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="TimesNewRoman.ttf">
+            <string>.SFUI-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -42,13 +46,6 @@
                                     <segue destination="qg5-zX-dzn" kind="presentation" id="ySh-Yl-NQp"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WikiStar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fzx-Bo-yaw">
-                                <rect key="frame" x="108" y="158" width="297" height="166"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="49"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="KXx-RS-CYS">
                                 <rect key="frame" x="112" y="341" width="169" height="78"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -72,6 +69,10 @@
                                     <segue destination="mW2-Mh-gag" kind="presentation" id="YCe-Fd-pB4"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="zYE-GW-Q0q">
+                                <rect key="frame" x="40" y="140" width="312" height="161"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="darkTextColor"/>
@@ -104,31 +105,46 @@
                         </imageView>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="center" restorationIdentifier="celda_pantalla_principal" preservesSuperviewLayoutMargins="YES" reuseIdentifier="PantallaDeEspeciesLista" id="NdE-My-IaK" customClass="VistaDeCeldaEspecies" customModule="WikiStar" customModuleProvider="target">
-                                <rect key="frame" x="42" y="0.0" width="308" height="102"/>
+                                <rect key="frame" x="47" y="0.0" width="300" height="101"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="308" height="102"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="101"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="etiqueta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w7b-6r-E2N">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BotonAzul.png" translatesAutoresizingMaskIntoConstraints="NO" id="Gha-M7-FhW">
+                                            <rect key="frame" x="0.0" y="0.0" width="308" height="102"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Esta es la etiqueta a mod" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w7b-6r-E2N">
                                             <rect key="frame" x="0.0" y="0.0" width="308" height="102"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <fontDescription key="fontDescription" name="Starjedi" family="Starjedi" pointSize="20"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <nil key="highlightedColor"/>
+                                            <color key="highlightedColor" systemColor="systemYellowColor"/>
                                         </label>
                                     </subviews>
                                 </view>
                                 <viewLayoutGuide key="safeArea" id="SIN-KB-bIG"/>
-                                <color key="backgroundColor" red="0.03534485399723053" green="0.063036389648914337" blue="0.090871237218379974" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <size key="customSize" width="308" height="102"/>
+                                <size key="customSize" width="300" height="101"/>
                                 <connections>
                                     <outlet property="etiqueta" destination="w7b-6r-E2N" id="5xG-o7-ohB"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="5uH-d9-PN8"/>
+                    <navigationItem key="navigationItem" id="5uH-d9-PN8">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="Eko-gD-5mD">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="lc0-3F-f9i">
+                                <rect key="frame" x="16" y="0.0" width="93" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="back"/>
+                            </button>
+                        </barButtonItem>
+                        <connections>
+                            <outlet property="backBarButtonItem" destination="Eko-gD-5mD" id="Lu3-fW-9mr"/>
+                        </connections>
+                    </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mTZ-TI-vvq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -140,38 +156,41 @@
                 <collectionViewController storyboardIdentifier="PantallaDePlanetasLista" id="QYr-8I-hLU" customClass="PlanatasControladorPantalla" customModule="WikiStar" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="CEh-as-YBk">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.027492894180000001" green="0.85580413509999997" blue="2.8504003660000002e-16" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QdJ-TE-Ov7">
-                            <size key="itemSize" width="253" height="202"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QdJ-TE-Ov7">
+                            <size key="itemSize" width="300" height="100"/>
+                            <size key="estimatedItemSize" width="300" height="100"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
+                        <imageView key="backgroundView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondoEstrellas.jpg" id="wsB-HP-EkK">
+                            <rect key="frame" x="0.0" y="-56" width="393" height="842"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </imageView>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="celda_pantalla_principal_planetas" reuseIdentifier="PantallaDePlanetasLista" id="19C-1y-fz5" customClass="VistaDeCeldaPlanetas" customModule="WikiStar" customModuleProvider="target">
-                                <rect key="frame" x="70" y="0.0" width="253" height="202"/>
+                                <rect key="frame" x="46.666666666666664" y="0.0" width="300" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ewZ-Ho-oC0">
-                                    <rect key="frame" x="0.0" y="0.0" width="253" height="202"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="EtiquetaPlanetas" lineBreakMode="tailTruncation" numberOfLines="16" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNy-s5-bTT">
-                                            <rect key="frame" x="67" y="97" width="128" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BotonVerde.png" translatesAutoresizingMaskIntoConstraints="NO" id="9Od-5h-7o4">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="100"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="EtiquetaPlanetas" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="16" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNy-s5-bTT">
+                                            <rect key="frame" x="8" y="19" width="284" height="63"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Starjedi" family="Starjedi" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <constraints>
-                                        <constraint firstItem="jNy-s5-bTT" firstAttribute="top" secondItem="ewZ-Ho-oC0" secondAttribute="top" constant="16" id="H29-f2-Pvg"/>
-                                        <constraint firstAttribute="trailing" secondItem="jNy-s5-bTT" secondAttribute="trailing" constant="16" id="WNU-gr-8Nv"/>
-                                        <constraint firstItem="jNy-s5-bTT" firstAttribute="leading" secondItem="ewZ-Ho-oC0" secondAttribute="leading" constant="16" id="ZxC-FC-4nb"/>
-                                        <constraint firstAttribute="bottom" secondItem="jNy-s5-bTT" secondAttribute="bottom" constant="16" id="eJ4-tE-5qu"/>
-                                    </constraints>
                                 </collectionViewCellContentView>
-                                <color key="backgroundColor" red="0.52423652850000002" green="0.51987776990000001" blue="0.54006078179999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <size key="customSize" width="253" height="202"/>
+                                <size key="customSize" width="300" height="100"/>
                                 <connections>
                                     <outlet property="etiquetaPlaneta" destination="jNy-s5-bTT" id="Xzz-Vb-6qS"/>
                                 </connections>
@@ -186,7 +205,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0cv-OV-dPX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1250" y="701"/>
+            <point key="canvasLocation" x="1249.6183206106871" y="700.70422535211276"/>
         </scene>
         <!--Vehiculos Controlador De Pantalla-->
         <scene sceneID="8gZ-2K-811">
@@ -194,37 +213,41 @@
                 <collectionViewController storyboardIdentifier="PantallaDeVehiculosLista" id="ZA9-Y8-gn4" customClass="VehiculosControladorDePantalla" customModule="WikiStar" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Ja1-Gi-3nk">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" name="AccentColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="NnT-Rm-87q">
-                            <size key="itemSize" width="355" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="NnT-Rm-87q">
+                            <size key="itemSize" width="300" height="100"/>
+                            <size key="estimatedItemSize" width="300" height="100"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
+                        <imageView key="backgroundView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondoEstrellas.jpg" id="BNi-Xg-JMu">
+                            <rect key="frame" x="0.0" y="-56" width="393" height="842"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PantallaDeVehiculosLista" id="d08-cn-STQ" customClass="VistaDeCeldaVehiculos" customModule="WikiStar" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="166" height="52.333333333333336"/>
+                                <rect key="frame" x="46.666666666666664" y="0.0" width="300" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="CuO-fh-XED">
-                                    <rect key="frame" x="0.0" y="0.0" width="166" height="52.333333333333336"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Etiquetavehiculos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDH-uL-R88">
-                                            <rect key="frame" x="16" y="15.999999999999998" width="134" height="20.333333333333329"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BotonMorado.png" translatesAutoresizingMaskIntoConstraints="NO" id="6Xp-2Q-DN0">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="100"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Etiquetavehiculos" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDH-uL-R88">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="100"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Starjedi" family="Starjedi" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="RDH-uL-R88" secondAttribute="bottom" constant="16" id="7Hx-Jr-Utt"/>
-                                        <constraint firstItem="RDH-uL-R88" firstAttribute="leading" secondItem="CuO-fh-XED" secondAttribute="leading" constant="16" id="BWg-tW-SI4"/>
-                                        <constraint firstAttribute="trailing" secondItem="RDH-uL-R88" secondAttribute="trailing" constant="16" id="LYW-EA-gm3"/>
-                                        <constraint firstItem="RDH-uL-R88" firstAttribute="top" secondItem="CuO-fh-XED" secondAttribute="top" constant="16" id="Zf7-Lt-Ghq"/>
-                                    </constraints>
                                 </collectionViewCellContentView>
-                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <size key="customSize" width="300" height="100"/>
                                 <connections>
                                     <outlet property="etiquetaVehiculos" destination="RDH-uL-R88" id="4hv-rt-qaC"/>
                                 </connections>
@@ -239,7 +262,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="haM-Br-A0H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1250" y="1394"/>
+            <point key="canvasLocation" x="1249.6183206106871" y="1393.661971830986"/>
         </scene>
         <!--Naves Controlador Pantalla-->
         <scene sceneID="ez5-so-oxv">
@@ -247,38 +270,41 @@
                 <collectionViewController id="Fey-e0-sVu" customClass="NavesControladorPantalla" customModule="WikiStar" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="EUC-gK-g0V">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="XED-RU-MZC">
-                            <size key="itemSize" width="393" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="XED-RU-MZC">
+                            <size key="itemSize" width="300" height="100"/>
+                            <size key="estimatedItemSize" width="300" height="100"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
+                        <imageView key="backgroundView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondoEstrellas.jpg" id="uxZ-c8-CT6">
+                            <rect key="frame" x="0.0" y="-56" width="393" height="842"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PantallaDeNavesLista" id="eLY-ED-cZe" customClass="VistaDeCeldaNaves" customModule="WikiStar" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="300"/>
+                                <rect key="frame" x="46.666666666666664" y="0.0" width="300" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="8kf-2f-DgZ">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="300"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="SL3-5G-0yV">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Naves" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJt-rX-oR4">
-                                            <rect key="frame" x="16" y="16" width="361" height="268"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BotonRojo.png" translatesAutoresizingMaskIntoConstraints="NO" id="3w7-Yg-Gak">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="100"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Naves" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJt-rX-oR4">
+                                            <rect key="frame" x="-0.66666666666662877" y="0.0" width="300" height="100"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Starjedi" family="Starjedi" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="hJt-rX-oR4" secondAttribute="trailing" constant="16" id="NoL-eZ-Hrx"/>
-                                        <constraint firstAttribute="bottom" secondItem="hJt-rX-oR4" secondAttribute="bottom" constant="16" id="PwM-ZC-N7i"/>
-                                        <constraint firstItem="hJt-rX-oR4" firstAttribute="leading" secondItem="8kf-2f-DgZ" secondAttribute="leading" constant="16" id="ThD-0Y-l9c"/>
-                                        <constraint firstItem="hJt-rX-oR4" firstAttribute="top" secondItem="8kf-2f-DgZ" secondAttribute="top" constant="16" id="a5F-td-gZe"/>
-                                    </constraints>
                                 </collectionViewCellContentView>
-                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                <size key="customSize" width="393" height="300"/>
+                                <size key="customSize" width="300" height="100"/>
                                 <connections>
                                     <outlet property="etiquetaNaves" destination="hJt-rX-oR4" id="3Pe-j0-LEF"/>
                                 </connections>
@@ -293,7 +319,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LLG-6T-KDY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1250" y="2101"/>
+            <point key="canvasLocation" x="1249.6183206106871" y="2100.7042253521126"/>
         </scene>
         <!--Pantalla De Naves Info-->
         <scene sceneID="Iyi-VL-D42">
@@ -441,16 +467,16 @@
                                 <rect key="frame" x="76" y="103" width="240" height="198"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="15E-rU-VYv">
-                                <rect key="frame" x="51" y="371" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre Especie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="15E-rU-VYv">
+                                <rect key="frame" x="51" y="371" width="113" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Starjedi" family="Starjedi" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="a1p-mT-i3U"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
                     </view>
                     <connections>
                         <outlet property="Altura" destination="nAc-bg-xwL" id="U1G-CR-R1F"/>
@@ -721,28 +747,30 @@
         </scene>
     </scenes>
     <resources>
+        <image name="BotonAzul.png" width="1044.072021484375" height="320"/>
+        <image name="BotonMorado.png" width="1044.072021484375" height="320"/>
+        <image name="BotonRojo.png" width="1044.072021484375" height="320"/>
+        <image name="BotonVerde.png" width="1044.072021484375" height="320"/>
+        <image name="Logo.png" width="972.93597412109375" height="239.68800354003906"/>
         <image name="Naves.png" width="64" height="64"/>
         <image name="Vehiculos.png" width="64" height="64"/>
         <image name="especies.png" width="64" height="64"/>
         <image name="fondoEstrellas.jpg" width="350" height="622"/>
         <image name="planetas.png" width="64" height="64"/>
-        <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

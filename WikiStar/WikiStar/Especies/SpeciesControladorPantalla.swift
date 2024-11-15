@@ -19,7 +19,7 @@ class controladorPantallaPrincipalDeColeccion: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
- 
+        
         
         proveedorDeInfromacion.autoreferencia
             .obtener_especies(que_hacer_al_recibir: {[weak self] (esepcies_descargads) in
@@ -29,7 +29,11 @@ class controladorPantallaPrincipalDeColeccion: UICollectionViewController {
                 }
                 print(esepcies_descargads)})
         
+        // Agregar un botón de 'Back' de forma automática si estás usando un UINavigationController
+    
+
     }
+    
     /*
      // MARK: - Navigation
      

@@ -29,6 +29,12 @@
 		FBAF773E2CE269FB00F2B4FC /* Planets.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAF773D2CE269FB00F2B4FC /* Planets.swift */; };
 		FBAF77402CE26C0900F2B4FC /* VistaDeCeldaPlanetas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAF773F2CE26C0900F2B4FC /* VistaDeCeldaPlanetas.swift */; };
 		FBAF77422CE26D1C00F2B4FC /* PantallaDePlanetasInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAF77412CE26D1C00F2B4FC /* PantallaDePlanetasInfo.swift */; };
+		FBBB4B292CE7A78400D8CC58 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FBBB4B282CE7A78400D8CC58 /* Logo.png */; };
+		FBBB4B2B2CE7AF9900D8CC58 /* BotonAzul.png in Resources */ = {isa = PBXBuildFile; fileRef = FBBB4B2A2CE7AF9900D8CC58 /* BotonAzul.png */; };
+		FBBB4B2D2CE7B1CE00D8CC58 /* BotonVerde.png in Resources */ = {isa = PBXBuildFile; fileRef = FBBB4B2C2CE7B1CE00D8CC58 /* BotonVerde.png */; };
+		FBBB4B2F2CE7B1D400D8CC58 /* BotonRojo.png in Resources */ = {isa = PBXBuildFile; fileRef = FBBB4B2E2CE7B1D400D8CC58 /* BotonRojo.png */; };
+		FBBB4B312CE7B1DA00D8CC58 /* BotonMorado.png in Resources */ = {isa = PBXBuildFile; fileRef = FBBB4B302CE7B1DA00D8CC58 /* BotonMorado.png */; };
+		FBBB4B372CE7B8B300D8CC58 /* BotonBack.png in Resources */ = {isa = PBXBuildFile; fileRef = FBBB4B362CE7B8B300D8CC58 /* BotonBack.png */; };
 		FBD957732CE3FB9500F203AA /* Vehiculos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD957722CE3FB9500F203AA /* Vehiculos.swift */; };
 		FBD957752CE3FCEB00F203AA /* VehiculosControladorDePantalla.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD957742CE3FCEB00F203AA /* VehiculosControladorDePantalla.swift */; };
 		FBD957772CE3FEA700F203AA /* VistaDeCeldaVehiculos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD957762CE3FEA700F203AA /* VistaDeCeldaVehiculos.swift */; };
@@ -99,6 +105,12 @@
 		FBAF773D2CE269FB00F2B4FC /* Planets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planets.swift; sourceTree = "<group>"; };
 		FBAF773F2CE26C0900F2B4FC /* VistaDeCeldaPlanetas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaDeCeldaPlanetas.swift; sourceTree = "<group>"; };
 		FBAF77412CE26D1C00F2B4FC /* PantallaDePlanetasInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantallaDePlanetasInfo.swift; sourceTree = "<group>"; };
+		FBBB4B282CE7A78400D8CC58 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
+		FBBB4B2A2CE7AF9900D8CC58 /* BotonAzul.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BotonAzul.png; sourceTree = "<group>"; };
+		FBBB4B2C2CE7B1CE00D8CC58 /* BotonVerde.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BotonVerde.png; sourceTree = "<group>"; };
+		FBBB4B2E2CE7B1D400D8CC58 /* BotonRojo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BotonRojo.png; sourceTree = "<group>"; };
+		FBBB4B302CE7B1DA00D8CC58 /* BotonMorado.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BotonMorado.png; sourceTree = "<group>"; };
+		FBBB4B362CE7B8B300D8CC58 /* BotonBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BotonBack.png; path = ../../../../Downloads/BotonBack.png; sourceTree = "<group>"; };
 		FBD957722CE3FB9500F203AA /* Vehiculos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehiculos.swift; sourceTree = "<group>"; };
 		FBD957742CE3FCEB00F203AA /* VehiculosControladorDePantalla.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiculosControladorDePantalla.swift; sourceTree = "<group>"; };
 		FBD957762CE3FEA700F203AA /* VistaDeCeldaVehiculos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaDeCeldaVehiculos.swift; sourceTree = "<group>"; };
@@ -233,10 +245,16 @@
 			children = (
 				FB978BA32CDBD9850026A4A8 /* fondoEstrellas.jpg */,
 				FBD957B02CE41B6200F203AA /* BbyYoda.png */,
+				FBBB4B2C2CE7B1CE00D8CC58 /* BotonVerde.png */,
+				FBBB4B282CE7A78400D8CC58 /* Logo.png */,
 				FBD957C82CE420D100F203AA /* fondoEespecies.jpg */,
 				FBD957CA2CE424FD00F203AA /* PRUEBA.jpg */,
 				FBD957B32CE41B6200F203AA /* especies.png */,
 				FBD957B12CE41B6200F203AA /* Naves.png */,
+				FBBB4B302CE7B1DA00D8CC58 /* BotonMorado.png */,
+				FBBB4B2E2CE7B1D400D8CC58 /* BotonRojo.png */,
+				FBBB4B2A2CE7AF9900D8CC58 /* BotonAzul.png */,
+				FBBB4B362CE7B8B300D8CC58 /* BotonBack.png */,
 				FBD957AF2CE41B6200F203AA /* planetas.png */,
 				FBD957B22CE41B6200F203AA /* Vehiculos.png */,
 			);
@@ -409,6 +427,8 @@
 			files = (
 				FBD957C32CE41D1300F203AA /* Starjout.ttf in Resources */,
 				FBD957BF2CE41CE700F203AA /* Strjmono.ttf in Resources */,
+				FBBB4B2F2CE7B1D400D8CC58 /* BotonRojo.png in Resources */,
+				FBBB4B2B2CE7AF9900D8CC58 /* BotonAzul.png in Resources */,
 				FBD957C92CE420D100F203AA /* fondoEespecies.jpg in Resources */,
 				FB978B7C2CDBD4700026A4A8 /* Assets.xcassets in Resources */,
 				FBD957CB2CE424FD00F203AA /* PRUEBA.jpg in Resources */,
@@ -417,10 +437,14 @@
 				FBD957B72CE41B6200F203AA /* Vehiculos.png in Resources */,
 				FBD957B52CE41B6200F203AA /* BbyYoda.png in Resources */,
 				FBD957BE2CE41CE700F203AA /* Stjldbl1.ttf in Resources */,
+				FBBB4B292CE7A78400D8CC58 /* Logo.png in Resources */,
 				FB978BA42CDBD9850026A4A8 /* fondoEstrellas.jpg in Resources */,
+				FBBB4B312CE7B1DA00D8CC58 /* BotonMorado.png in Resources */,
+				FBBB4B2D2CE7B1CE00D8CC58 /* BotonVerde.png in Resources */,
 				FBD957BD2CE41CE700F203AA /* Stjldbl2.ttf in Resources */,
 				FB978B7A2CDBD4700026A4A8 /* Base in Resources */,
 				FBD957B82CE41B6200F203AA /* especies.png in Resources */,
+				FBBB4B372CE7B8B300D8CC58 /* BotonBack.png in Resources */,
 				FBD957B62CE41B6200F203AA /* Naves.png in Resources */,
 				FBD957C62CE41D2200F203AA /* Starjedi.ttf in Resources */,
 				FBD957B42CE41B6200F203AA /* planetas.png in Resources */,
