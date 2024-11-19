@@ -53,12 +53,12 @@ class PantallaVehiculosInfo: UIViewController{
 
             Nombre.text = vehiculo.name
             Modelo.text = vehiculo.model
-            CostCred.text = String(format: "₡%@", vehiculo.cost_in_credits )
+            CostCred.text = String(format: "₡ %@", vehiculo.cost_in_credits )
             Tamano.text = vehiculo.length
             VelocidadMax.text = String(format: "%@ km/h", vehiculo.max_atmosphering_speed )
-            Equipo.text = vehiculo.crew
-            NumPasajeros.text = "\(vehiculo.passengers ) personas"
-            CapCarga.text = String(format: "%@ toneladas", vehiculo.cargo_capacity )
+            Equipo.text = String(format: "Crew %@", vehiculo.crew)
+            NumPasajeros.text = "\(vehiculo.passengers ) People"
+            CapCarga.text = String(format: "%@ Tons.", vehiculo.cargo_capacity )
             ClaseDeVehiculo.text = vehiculo.vehicle_class
               
            

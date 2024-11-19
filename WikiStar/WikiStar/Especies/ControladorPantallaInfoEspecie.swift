@@ -52,7 +52,7 @@ class ControladorPantallaInfoEspecie: UIViewController {
         
         Nombre.text = especie.name
         Altura.text = String(format: "%@ cm", especie.average_height)
-        vida.text = String(format: "%@ años", especie.average_lifespan)
+        vida.text = String(format: "%@ years", especie.average_lifespan)
         Lenguaje.text = especie.language
         
         // Llamar a la función para obtener el nombre del planeta (homeworld)

@@ -52,12 +52,12 @@ class PantallaDeNavesInfo: UIViewController{
             Nombre.text = nave.name
             Modelo.text = nave.model
             TamNave.text = nave.length
-            Eqwuipo.text = nave.crew
-            Cargo.text = String(format: "%@ toneladas", nave.cargo_capacity)
-            Pasajeros.text = "\(nave.passengers) personas"
+            Eqwuipo.text = String(format: "Crew %@", nave.crew)
+            Cargo.text = String(format: "%@ Tons.", nave.cargo_capacity)
+            Pasajeros.text = "\(nave.passengers) people"
             VelocidadMax.text = String(format: "%@ km/h", nave.max_atmosphering_speed)
-            Creditos.text = String(format: "₡%@", nave.cost_in_credits)
-            Hyper.text = nave.hyperdrive_rating
+            Creditos.text = String(format: "₡ %@", nave.cost_in_credits)
+            Hyper.text = String(format: "Class %@",nave.hyperdrive_rating)
             ClaseNave.text = nave.starship_class
 
                

@@ -50,8 +50,8 @@ class PantallaDePlanetasInfo: UIViewController{
                
                // Asignamos los valores a los UILabels
                Nombre.text = planeta.name
-               Rotacion.text = String(format: "%@ horas", planeta.rotation_period)
-               Orbita.text = String(format: "%@ días", planeta.orbital_period)
+               Rotacion.text = String(format: "%@ hours", planeta.rotation_period)
+               Orbita.text = String(format: "%@ days", planeta.orbital_period)
                Diametro.text = String(format: "%@ km", planeta.diameter)
                Clima.text = planeta.climate
                Gravedad.text = planeta.gravity
