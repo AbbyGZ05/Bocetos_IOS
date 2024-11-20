@@ -7,6 +7,6 @@
 
 import UIKit
 
-class prueba: UINavigationItem {
-
+class prueba: UINavigationBar {
+    
 }

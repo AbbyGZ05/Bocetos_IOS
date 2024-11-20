@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FB5F60C12CEE4280002206A5 /* prueba.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5F60C02CEE4280002206A5 /* prueba.swift */; };
+		FB5F60C32CEE4C36002206A5 /* EstiloBarra.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5F60C22CEE4C36002206A5 /* EstiloBarra.swift */; };
 		FB84C2082CDD697F00D810FE /* VistaDeCeldaEspecies.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB84C2072CDD697F00D810FE /* VistaDeCeldaEspecies.swift */; };
 		FB84C20A2CDD722800D810FE /* ControladorPantallaInfoEspecie.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB84C2092CDD722800D810FE /* ControladorPantallaInfoEspecie.swift */; };
 		FB84C20D2CDD7BC000D810FE /* mod_navegador_principal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB84C20C2CDD7BC000D810FE /* mod_navegador_principal.swift */; };
@@ -81,6 +82,7 @@
 
 /* Begin PBXFileReference section */
 		FB5F60C02CEE4280002206A5 /* prueba.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prueba.swift; sourceTree = "<group>"; };
+		FB5F60C22CEE4C36002206A5 /* EstiloBarra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstiloBarra.swift; sourceTree = "<group>"; };
 		FB84C2072CDD697F00D810FE /* VistaDeCeldaEspecies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaDeCeldaEspecies.swift; sourceTree = "<group>"; };
 		FB84C2092CDD722800D810FE /* ControladorPantallaInfoEspecie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorPantallaInfoEspecie.swift; sourceTree = "<group>"; };
 		FB84C20C2CDD7BC000D810FE /* mod_navegador_principal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mod_navegador_principal.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 			children = (
 				FB84C20C2CDD7BC000D810FE /* mod_navegador_principal.swift */,
 				FB5F60C02CEE4280002206A5 /* prueba.swift */,
+				FB5F60C22CEE4C36002206A5 /* EstiloBarra.swift */,
 			);
 			path = Estilos;
 			sourceTree = "<group>";
@@ -488,6 +491,7 @@
 				FBD957792CE3FF3400F203AA /* PantallaVehiculosInfo.swift in Sources */,
 				FBAF77422CE26D1C00F2B4FC /* PantallaDePlanetasInfo.swift in Sources */,
 				FBD957752CE3FCEB00F203AA /* VehiculosControladorDePantalla.swift in Sources */,
+				FB5F60C32CEE4C36002206A5 /* EstiloBarra.swift in Sources */,
 				FBAF77402CE26C0900F2B4FC /* VistaDeCeldaPlanetas.swift in Sources */,
 				FB84C20A2CDD722800D810FE /* ControladorPantallaInfoEspecie.swift in Sources */,
 				FB978B732CDBD4700026A4A8 /* AppDelegate.swift in Sources */,

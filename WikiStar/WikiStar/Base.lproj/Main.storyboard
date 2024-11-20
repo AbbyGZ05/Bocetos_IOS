@@ -143,7 +143,7 @@
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QdJ-TE-Ov7">
                             <size key="itemSize" width="300" height="100"/>
                             <size key="estimatedItemSize" width="300" height="100"/>
-                            <size key="headerReferenceSize" width="0.0" height="72"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
@@ -154,7 +154,7 @@
                         </imageView>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="celda_pantalla_principal_planetas" reuseIdentifier="PantallaDePlanetasLista" id="19C-1y-fz5" customClass="VistaDeCeldaPlanetas" customModule="WikiStar" customModuleProvider="target">
-                                <rect key="frame" x="46.666666666666664" y="72" width="300" height="100"/>
+                                <rect key="frame" x="46.666666666666664" y="0.0" width="300" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ewZ-Ho-oC0">
                                     <rect key="frame" x="0.0" y="0.0" width="300" height="100"/>
@@ -179,28 +179,12 @@
                                 </connections>
                             </collectionViewCell>
                         </cells>
-                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="shf-9P-n6f">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="72"/>
-                            <autoresizingMask key="autoresizingMask"/>
-                            <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ooi-ni-NMy">
-                                    <rect key="frame" x="13" y="13" width="56" height="46"/>
-                                    <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" image="BotonBack.png"/>
-                                </button>
-                            </subviews>
-                            <constraints>
-                                <constraint firstAttribute="bottomMargin" secondItem="ooi-ni-NMy" secondAttribute="bottom" constant="5" id="1TG-hV-QAa"/>
-                                <constraint firstItem="ooi-ni-NMy" firstAttribute="leading" secondItem="shf-9P-n6f" secondAttribute="leadingMargin" constant="5" id="Z1G-pv-5xO"/>
-                                <constraint firstItem="ooi-ni-NMy" firstAttribute="top" secondItem="shf-9P-n6f" secondAttribute="topMargin" constant="5" id="p9Y-Y0-plj"/>
-                            </constraints>
-                        </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="QYr-8I-hLU" id="z3K-c3-PvQ"/>
                             <outlet property="delegate" destination="QYr-8I-hLU" id="6bU-a8-kcq"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="u8g-zC-wYi" customClass="prueba" customModule="WikiStar" customModuleProvider="target"/>
+                    <navigationItem key="navigationItem" id="u8g-zC-wYi"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0cv-OV-dPX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -929,7 +913,8 @@
         <!--Navigation Controller-->
         <scene sceneID="PMz-2G-tnK">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IIc-t5-f58" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zpb-VU-9Rj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController storyboardIdentifier="nav del planetas" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IIc-t5-f58" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="waE-CI-uh2">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
@@ -940,7 +925,6 @@
                         <segue destination="QYr-8I-hLU" kind="relationship" relationship="rootViewController" id="6FN-ex-aX6"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zpb-VU-9Rj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="447" y="701"/>
         </scene>
@@ -1001,7 +985,6 @@
     </scenes>
     <resources>
         <image name="BotonAzul.png" width="1044.072021484375" height="320"/>
-        <image name="BotonBack.png" width="32.11199951171875" height="32.11199951171875"/>
         <image name="BotonMorado.png" width="1044.072021484375" height="320"/>
         <image name="BotonRojo.png" width="1044.072021484375" height="320"/>
         <image name="BotonVerde.png" width="1044.072021484375" height="320"/>
