@@ -46,7 +46,7 @@ class PlanatasControladorPantalla: UICollectionViewController {
                )
                
                // Ajustamos el tamaño del botón
-               backButton.imageInsets = UIEdgeInsets(top: 0, left: -100, bottom: 0, right: 0) // Ajustar según sea necesario
+               backButton.imageInsets = UIEdgeInsets(top: 0, left: -130, bottom: 0, right: 0) // Ajustar según sea necesario
                
                // Establecer el botón de retroceso en la barra de navegación
                navigationItem.leftBarButtonItem = backButton
@@ -54,7 +54,7 @@ class PlanatasControladorPantalla: UICollectionViewController {
            
            // Acción del botón de retroceso
            @objc func backButtonTapped() {
-               print(navigationController?)
+              
                navigationController?.popViewController(animated: true)
            }
     /*
