@@ -9,7 +9,9 @@ import Foundation
 
 struct Planetas: Codable{
     
-    let id : Int?
+    var id : Int {
+        get {return 0}
+    }
     var name: String
     var rotation_period: String
     var orbital_period: String

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB5F60C12CEE4280002206A5 /* prueba.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5F60C02CEE4280002206A5 /* prueba.swift */; };
 		FB84C2082CDD697F00D810FE /* VistaDeCeldaEspecies.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB84C2072CDD697F00D810FE /* VistaDeCeldaEspecies.swift */; };
 		FB84C20A2CDD722800D810FE /* ControladorPantallaInfoEspecie.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB84C2092CDD722800D810FE /* ControladorPantallaInfoEspecie.swift */; };
 		FB84C20D2CDD7BC000D810FE /* mod_navegador_principal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB84C20C2CDD7BC000D810FE /* mod_navegador_principal.swift */; };
@@ -79,6 +80,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB5F60C02CEE4280002206A5 /* prueba.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prueba.swift; sourceTree = "<group>"; };
 		FB84C2072CDD697F00D810FE /* VistaDeCeldaEspecies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaDeCeldaEspecies.swift; sourceTree = "<group>"; };
 		FB84C2092CDD722800D810FE /* ControladorPantallaInfoEspecie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorPantallaInfoEspecie.swift; sourceTree = "<group>"; };
 		FB84C20C2CDD7BC000D810FE /* mod_navegador_principal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mod_navegador_principal.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				FB84C20C2CDD7BC000D810FE /* mod_navegador_principal.swift */,
+				FB5F60C02CEE4280002206A5 /* prueba.swift */,
 			);
 			path = Estilos;
 			sourceTree = "<group>";
@@ -479,6 +482,7 @@
 				FB84C2122CDD7F5F00D810FE /* VistaInfoEspecies.swift in Sources */,
 				FBD9577B2CE3FF9200F203AA /* ProveedorInfoVehiculos.swift in Sources */,
 				FB978BA92CDBE0860026A4A8 /* Species.swift in Sources */,
+				FB5F60C12CEE4280002206A5 /* prueba.swift in Sources */,
 				FB84C2082CDD697F00D810FE /* VistaDeCeldaEspecies.swift in Sources */,
 				FB978B772CDBD4700026A4A8 /* ViewController.swift in Sources */,
 				FBD957792CE3FF3400F203AA /* PantallaVehiculosInfo.swift in Sources */,

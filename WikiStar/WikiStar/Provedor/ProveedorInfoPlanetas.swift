@@ -47,9 +47,17 @@ class ProveedorInfoPlanetas{
     func obtener_planeta(id: Int?, que_hacer_al_recibir: @escaping (
         Planetas) -> Void) {
             if(lista_de_planetas.count > 1){
-                print(lista_de_planetas)
+                ///print(lista_de_planetas)
+                for planetoide in self.lista_de_planetas{
+                    print(planetoide.id)
+                }
                 if let planeta = self.lista_de_planetas.first(where: {$0.id == id}){
+                    print("Planeta ubicado: \(planeta)")
                     que_hacer_al_recibir(planeta)
+                    
+                }
+                else{
+                    print("Oye, no esta en tu lista de planetas, que paso mi compa")
                 }
             }
             
@@ -65,7 +73,7 @@ class ProveedorInfoPlanetas{
                                 que_hacer_al_recibir(prueba_de_interpretacion_de_datos)
                             }
                             else {
-                                print(respuesta)
+                                print("___AQUI no deberia suceder algo")
                             }
                         } catch {
                             print("Error -_- \(#function)")

@@ -82,7 +82,7 @@ class PlanatasControladorPantalla: UICollectionViewController {
             // Asegúrate de que 'id_especie' se pase correctamente
             // Si tienes un array o una lista de especies, deberías pasar el 'id' correcto
             // Aquí asumo que 'indexPath.item' es el índice de un arreglo de especies, si es necesario
-            pantalla_de_planetas.id_planeta = indexPath.item  // O usa el valor de especie adecuado
+            pantalla_de_planetas.id_planeta = indexPath.item // O usa el valor de especie adecuado
             self.navigationController?.pushViewController(pantalla_de_planetas, animated: true)
         } else {
             print("No se pudo encontrar el controlador de vista con el identificador 'PantallaDeplanetaInfo'")
