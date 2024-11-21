@@ -458,7 +458,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Voc-RG-MLg"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
                     </view>
                     <connections>
                         <outlet property="Cargo" destination="nAG-am-Exl" id="Oj9-sy-IMY"/>
@@ -466,6 +466,7 @@
                         <outlet property="Creditos" destination="zSE-Hi-fSb" id="oux-4G-htt"/>
                         <outlet property="Eqwuipo" destination="PLI-7t-F0v" id="bt4-PN-OSY"/>
                         <outlet property="Hyper" destination="0TW-Fv-PNS" id="QTc-w9-UkQ"/>
+                        <outlet property="ImagenNave" destination="8P5-UA-1QH" id="DqZ-Nx-kk9"/>
                         <outlet property="Modelo" destination="2ex-t9-6Zo" id="C3s-YO-ASL"/>
                         <outlet property="Nombre" destination="Y3Y-gJ-5yy" id="FUI-3S-rk3"/>
                         <outlet property="Pasajeros" destination="zHe-qX-cZX" id="Hr6-we-iPg"/>
@@ -716,13 +717,14 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vN6-6G-TK2"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
                     </view>
                     <connections>
                         <outlet property="AWA" destination="bbv-w7-8cv" id="cJV-hg-RJu"/>
                         <outlet property="Clima" destination="v7I-8M-5XS" id="o44-jB-yPT"/>
                         <outlet property="Diametro" destination="zK1-9i-z81" id="9xT-PF-SCy"/>
                         <outlet property="Gravedad" destination="m0t-bc-dC3" id="LDQ-aa-Yr0"/>
+                        <outlet property="ImagenPlaneta" destination="5DT-Ck-qxd" id="TFr-FB-72e"/>
                         <outlet property="Nombre" destination="0oR-Cg-EED" id="wQY-wM-XEl"/>
                         <outlet property="Orbita" destination="BkB-GI-Iwy" id="5lQ-Ht-YLS"/>
                         <outlet property="Poblacion" destination="t2R-nb-8SU" id="2RN-eE-gLR"/>
@@ -874,13 +876,14 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="m6D-Ty-d0V"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
                     </view>
                     <connections>
                         <outlet property="CapCarga" destination="2vc-PY-wpE" id="A79-cL-FjD"/>
                         <outlet property="ClaseDeVehiculo" destination="Bwu-BH-qy8" id="0wr-cU-6nt"/>
                         <outlet property="CostCred" destination="PL9-xV-Zi1" id="y8A-f7-NtM"/>
                         <outlet property="Equipo" destination="ouP-KS-10G" id="vRX-gV-z0x"/>
+                        <outlet property="ImagenVehiculos" destination="ELY-YS-qh4" id="AxR-fU-CtT"/>
                         <outlet property="Modelo" destination="59p-iq-uwA" id="taV-sQ-zMx"/>
                         <outlet property="Nombre" destination="8p7-II-Tky" id="8gk-lX-QSh"/>
                         <outlet property="NumPasajeros" destination="PB7-Tj-Mcg" id="RH6-ec-prT"/>
@@ -927,9 +930,6 @@
         </systemColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBrownColor">
             <color red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

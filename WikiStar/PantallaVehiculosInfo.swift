@@ -2,6 +2,21 @@ import UIKit
 
 class PantallaVehiculosInfo: UIViewController{
     
+    // Diccionario de imágenes, mapeando el nombre de la especie a una imagen
+    let diccionarioDeImagenesVehiculos: [String: UIImage] = [
+        "Sand Crawler": UIImage(named: "SandCrawler.png")!,
+        "T-16 skyhopper": UIImage(named: "T16Sky.png")!,
+        "X-34 landspeeder": UIImage(named: "X34Land.png")!,
+        "TIE/LN starfighter": UIImage(named: "TieLN.png")!,
+        "Snowspeeder": UIImage(named: "Snowspeeder.png")!,
+        "TIE bomber": UIImage(named: "TieBomber.png")!,
+        "AT-AT": UIImage(named: "Atat.png")!,
+        "AT-ST": UIImage(named: "Atst.png")!,
+        "Storm IV Twin-Pod cloud car": UIImage(named: "StormIV.png")!,
+        "Sail barge": UIImage(named: "SailBarge.png")!,
+        
+    ]
+    
     let proveedor_De_Informacion_Vehiculo = ProveedorInfoVehiculos.autoreferencia  // Proveedor de información
 
     
@@ -14,7 +29,7 @@ class PantallaVehiculosInfo: UIViewController{
     @IBOutlet weak var NumPasajeros: UILabel!
     @IBOutlet weak var CapCarga: UILabel!
     @IBOutlet weak var ClaseDeVehiculo: UILabel!
-    
+    @IBOutlet weak var ImagenVehiculos: UIImageView!
     
     
     public var id_vehiculo: Int?
@@ -85,7 +100,16 @@ class PantallaVehiculosInfo: UIViewController{
             ClaseDeVehiculo.text = vehiculo.vehicle_class
               
            
+            // Usar el diccionario de imágenes para obtener y mostrar la imagen correspondiente
+            let nombreVehicle = vehiculo.name
+            
+                if let imagen = diccionarioDeImagenesVehiculos[nombreVehicle] {
+                    ImagenVehiculos.image = imagen
+                } else {
+                    // Si no se encuentra la imagen, muestra una imagen por defecto
+                    ImagenVehiculos.image = UIImage(named: "imagen_por_defecto")
+                }
+            }
         }
-}
 
 

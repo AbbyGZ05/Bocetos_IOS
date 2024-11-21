@@ -3,6 +3,20 @@ import UIKit
 class PantallaDeNavesInfo: UIViewController{
     
     let proveedor_De_Informacion_Nave = ProveedorInfoNaves.autoreferencia  // Proveedor de información
+    
+    let diccionarioDeImagenesNaves: [String: UIImage] = [
+        "CR90 corvette": UIImage(named: "cr90Corvette.png")!,
+        "Star Destroyer": UIImage(named: "StarDestrpyer.png")!,
+        "Sentinel-class landing craft": UIImage(named: "SentimelClassL.png")!,
+        "Death Star": UIImage(named: "EstrellaMuerte.png")!,
+        "Millennium Falcon": UIImage(named: "Falcon.png")!,
+        "Y-wing": UIImage(named: "Ywing.png")!,
+        "X-wing": UIImage(named: "Xwing.png")!,
+        "TIE Advanced x1": UIImage(named: "TieA1.png")!,
+        "Executor": UIImage(named: "Executer.png")!,
+        "Rebel transport": UIImage(named: "RebelTra.png")!,
+        
+    ]
 
     @IBOutlet weak var Nombre: UILabel!
     @IBOutlet weak var Modelo: UILabel!
@@ -14,7 +28,7 @@ class PantallaDeNavesInfo: UIViewController{
     @IBOutlet weak var Creditos: UILabel!
     @IBOutlet weak var Hyper: UILabel!
     @IBOutlet weak var ClaseNave: UILabel!
-    
+    @IBOutlet weak var ImagenNave: UIImageView!
     
     public var id_nave: Int?
         public var nave: Naves?
@@ -82,10 +96,18 @@ class PantallaDeNavesInfo: UIViewController{
             Creditos.text = String(format: "₡ %@", nave.cost_in_credits)
             Hyper.text = String(format: "Class %@",nave.hyperdrive_rating)
             ClaseNave.text = nave.starship_class
-
-               
-            
+        
+    
+    // Usar el diccionario de imágenes para obtener y mostrar la imagen correspondiente
+    let nombreNave = nave.name
+    
+        if let imagen = diccionarioDeImagenesNaves[nombreNave] {
+            ImagenNave.image = imagen
+        } else {
+            // Si no se encuentra la imagen, muestra una imagen por defecto
+            ImagenNave.image = UIImage(named: "imagen_por_defecto")
         }
+    }
 }
 
 

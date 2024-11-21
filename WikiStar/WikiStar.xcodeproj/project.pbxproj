@@ -26,6 +26,46 @@
 		FB978BA42CDBD9850026A4A8 /* fondoEstrellas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB978BA32CDBD9850026A4A8 /* fondoEstrellas.jpg */; };
 		FB978BA92CDBE0860026A4A8 /* Species.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB978BA82CDBE0860026A4A8 /* Species.swift */; };
 		FB978BAB2CDBE0B10026A4A8 /* SpeciesControladorPantalla.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB978BAA2CDBE0B10026A4A8 /* SpeciesControladorPantalla.swift */; };
+		FBA8DFE52CEFCB1A004A6566 /* Rodian.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA8DFDB2CEFCB19004A6566 /* Rodian.png */; };
+		FBA8DFE62CEFCB1A004A6566 /* Tandoshan.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA8DFDC2CEFCB19004A6566 /* Tandoshan.png */; };
+		FBA8DFE72CEFCB1A004A6566 /* ewok.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA8DFDD2CEFCB1A004A6566 /* ewok.png */; };
+		FBA8DFE82CEFCB1A004A6566 /* Droide.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA8DFDE2CEFCB1A004A6566 /* Droide.png */; };
+		FBA8DFE92CEFCB1A004A6566 /* Sullstan.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA8DFDF2CEFCB1A004A6566 /* Sullstan.png */; };
+		FBA8DFEA2CEFCB1A004A6566 /* Hutt.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA8DFE02CEFCB1A004A6566 /* Hutt.png */; };
+		FBA8DFEB2CEFCB1A004A6566 /* Calamari.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA8DFE12CEFCB1A004A6566 /* Calamari.png */; };
+		FBA8DFED2CEFCB1A004A6566 /* Humanos.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA8DFE32CEFCB1A004A6566 /* Humanos.png */; };
+		FBA8DFEE2CEFCB1A004A6566 /* babyyoda.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA8DFE42CEFCB1A004A6566 /* babyyoda.png */; };
+		FBA8DFF02CEFCEA3004A6566 /* Chuvaca.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA8DFEF2CEFCEA3004A6566 /* Chuvaca.png */; };
+		FBA8DFFC2CEFCFFC004A6566 /* cr90Corvette.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA8DFF22CEFCFFC004A6566 /* cr90Corvette.png */; };
+		FBA8DFFD2CEFCFFC004A6566 /* Xwing.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA8DFF32CEFCFFC004A6566 /* Xwing.png */; };
+		FBA8DFFE2CEFCFFC004A6566 /* Falcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA8DFF42CEFCFFC004A6566 /* Falcon.png */; };
+		FBA8DFFF2CEFCFFC004A6566 /* Ywing.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA8DFF52CEFCFFC004A6566 /* Ywing.png */; };
+		FBA8E0002CEFCFFC004A6566 /* Executer.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA8DFF62CEFCFFC004A6566 /* Executer.png */; };
+		FBA8E0012CEFCFFC004A6566 /* SentimelClassL.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA8DFF72CEFCFFC004A6566 /* SentimelClassL.png */; };
+		FBA8E0022CEFCFFC004A6566 /* StarDestrpyer.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA8DFF82CEFCFFC004A6566 /* StarDestrpyer.png */; };
+		FBA8E0032CEFCFFC004A6566 /* RebelTra.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA8DFF92CEFCFFC004A6566 /* RebelTra.png */; };
+		FBA8E0042CEFCFFC004A6566 /* TieA1.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA8DFFA2CEFCFFC004A6566 /* TieA1.png */; };
+		FBA8E0052CEFCFFC004A6566 /* EstrellaMuerte.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA8DFFB2CEFCFFC004A6566 /* EstrellaMuerte.png */; };
+		FBA8E0112CEFD43D004A6566 /* Naboo.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA8E0072CEFD43D004A6566 /* Naboo.png */; };
+		FBA8E0122CEFD43D004A6566 /* Tatooine.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA8E0082CEFD43D004A6566 /* Tatooine.png */; };
+		FBA8E0132CEFD43D004A6566 /* Dagobah.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA8E0092CEFD43D004A6566 /* Dagobah.png */; };
+		FBA8E0142CEFD43D004A6566 /* Endor.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA8E00A2CEFD43D004A6566 /* Endor.png */; };
+		FBA8E0152CEFD43D004A6566 /* Bespin.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA8E00B2CEFD43D004A6566 /* Bespin.png */; };
+		FBA8E0162CEFD43D004A6566 /* Hoth.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA8E00C2CEFD43D004A6566 /* Hoth.png */; };
+		FBA8E0172CEFD43D004A6566 /* YavinIV.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA8E00D2CEFD43D004A6566 /* YavinIV.png */; };
+		FBA8E0182CEFD43D004A6566 /* Coruscant.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA8E00E2CEFD43D004A6566 /* Coruscant.png */; };
+		FBA8E0192CEFD43D004A6566 /* Kamino.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA8E00F2CEFD43D004A6566 /* Kamino.png */; };
+		FBA8E01A2CEFD43D004A6566 /* Alderaan.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA8E0102CEFD43D004A6566 /* Alderaan.png */; };
+		FBA8E0262CEFD68E004A6566 /* Atat.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA8E01C2CEFD68D004A6566 /* Atat.png */; };
+		FBA8E0272CEFD68E004A6566 /* Snowspeeder.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA8E01D2CEFD68D004A6566 /* Snowspeeder.png */; };
+		FBA8E0282CEFD68E004A6566 /* StormIV.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA8E01E2CEFD68D004A6566 /* StormIV.png */; };
+		FBA8E0292CEFD68E004A6566 /* Atst.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA8E01F2CEFD68D004A6566 /* Atst.png */; };
+		FBA8E02A2CEFD68E004A6566 /* T16Sky.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA8E0202CEFD68D004A6566 /* T16Sky.png */; };
+		FBA8E02B2CEFD68E004A6566 /* SailBarge.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA8E0212CEFD68D004A6566 /* SailBarge.png */; };
+		FBA8E02C2CEFD68E004A6566 /* TieBomber.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA8E0222CEFD68D004A6566 /* TieBomber.png */; };
+		FBA8E02D2CEFD68E004A6566 /* TieLN.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA8E0232CEFD68E004A6566 /* TieLN.png */; };
+		FBA8E02E2CEFD68E004A6566 /* SandCrawler.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA8E0242CEFD68E004A6566 /* SandCrawler.png */; };
+		FBA8E02F2CEFD68E004A6566 /* X34Land.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA8E0252CEFD68E004A6566 /* X34Land.png */; };
 		FBAF77392CE2682500F2B4FC /* PlanetasControladorPantalla.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAF77382CE2682500F2B4FC /* PlanetasControladorPantalla.swift */; };
 		FBAF773C2CE2692E00F2B4FC /* ProveedorInfoPlanetas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAF773B2CE2692E00F2B4FC /* ProveedorInfoPlanetas.swift */; };
 		FBAF773E2CE269FB00F2B4FC /* Planets.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAF773D2CE269FB00F2B4FC /* Planets.swift */; };
@@ -104,6 +144,46 @@
 		FB978BA32CDBD9850026A4A8 /* fondoEstrellas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fondoEstrellas.jpg; sourceTree = "<group>"; };
 		FB978BA82CDBE0860026A4A8 /* Species.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Species.swift; sourceTree = "<group>"; };
 		FB978BAA2CDBE0B10026A4A8 /* SpeciesControladorPantalla.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesControladorPantalla.swift; sourceTree = "<group>"; };
+		FBA8DFDB2CEFCB19004A6566 /* Rodian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rodian.png; sourceTree = "<group>"; };
+		FBA8DFDC2CEFCB19004A6566 /* Tandoshan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tandoshan.png; sourceTree = "<group>"; };
+		FBA8DFDD2CEFCB1A004A6566 /* ewok.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ewok.png; sourceTree = "<group>"; };
+		FBA8DFDE2CEFCB1A004A6566 /* Droide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Droide.png; sourceTree = "<group>"; };
+		FBA8DFDF2CEFCB1A004A6566 /* Sullstan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sullstan.png; sourceTree = "<group>"; };
+		FBA8DFE02CEFCB1A004A6566 /* Hutt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hutt.png; sourceTree = "<group>"; };
+		FBA8DFE12CEFCB1A004A6566 /* Calamari.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Calamari.png; sourceTree = "<group>"; };
+		FBA8DFE32CEFCB1A004A6566 /* Humanos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Humanos.png; sourceTree = "<group>"; };
+		FBA8DFE42CEFCB1A004A6566 /* babyyoda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = babyyoda.png; sourceTree = "<group>"; };
+		FBA8DFEF2CEFCEA3004A6566 /* Chuvaca.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chuvaca.png; sourceTree = "<group>"; };
+		FBA8DFF22CEFCFFC004A6566 /* cr90Corvette.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cr90Corvette.png; sourceTree = "<group>"; };
+		FBA8DFF32CEFCFFC004A6566 /* Xwing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Xwing.png; sourceTree = "<group>"; };
+		FBA8DFF42CEFCFFC004A6566 /* Falcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Falcon.png; sourceTree = "<group>"; };
+		FBA8DFF52CEFCFFC004A6566 /* Ywing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ywing.png; sourceTree = "<group>"; };
+		FBA8DFF62CEFCFFC004A6566 /* Executer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Executer.png; sourceTree = "<group>"; };
+		FBA8DFF72CEFCFFC004A6566 /* SentimelClassL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SentimelClassL.png; sourceTree = "<group>"; };
+		FBA8DFF82CEFCFFC004A6566 /* StarDestrpyer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StarDestrpyer.png; sourceTree = "<group>"; };
+		FBA8DFF92CEFCFFC004A6566 /* RebelTra.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RebelTra.png; sourceTree = "<group>"; };
+		FBA8DFFA2CEFCFFC004A6566 /* TieA1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TieA1.png; sourceTree = "<group>"; };
+		FBA8DFFB2CEFCFFC004A6566 /* EstrellaMuerte.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EstrellaMuerte.png; sourceTree = "<group>"; };
+		FBA8E0072CEFD43D004A6566 /* Naboo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Naboo.png; sourceTree = "<group>"; };
+		FBA8E0082CEFD43D004A6566 /* Tatooine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tatooine.png; sourceTree = "<group>"; };
+		FBA8E0092CEFD43D004A6566 /* Dagobah.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dagobah.png; sourceTree = "<group>"; };
+		FBA8E00A2CEFD43D004A6566 /* Endor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Endor.png; sourceTree = "<group>"; };
+		FBA8E00B2CEFD43D004A6566 /* Bespin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bespin.png; sourceTree = "<group>"; };
+		FBA8E00C2CEFD43D004A6566 /* Hoth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hoth.png; sourceTree = "<group>"; };
+		FBA8E00D2CEFD43D004A6566 /* YavinIV.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YavinIV.png; sourceTree = "<group>"; };
+		FBA8E00E2CEFD43D004A6566 /* Coruscant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Coruscant.png; sourceTree = "<group>"; };
+		FBA8E00F2CEFD43D004A6566 /* Kamino.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Kamino.png; sourceTree = "<group>"; };
+		FBA8E0102CEFD43D004A6566 /* Alderaan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Alderaan.png; sourceTree = "<group>"; };
+		FBA8E01C2CEFD68D004A6566 /* Atat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Atat.png; sourceTree = "<group>"; };
+		FBA8E01D2CEFD68D004A6566 /* Snowspeeder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snowspeeder.png; sourceTree = "<group>"; };
+		FBA8E01E2CEFD68D004A6566 /* StormIV.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StormIV.png; sourceTree = "<group>"; };
+		FBA8E01F2CEFD68D004A6566 /* Atst.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Atst.png; sourceTree = "<group>"; };
+		FBA8E0202CEFD68D004A6566 /* T16Sky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = T16Sky.png; sourceTree = "<group>"; };
+		FBA8E0212CEFD68D004A6566 /* SailBarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SailBarge.png; sourceTree = "<group>"; };
+		FBA8E0222CEFD68D004A6566 /* TieBomber.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TieBomber.png; sourceTree = "<group>"; };
+		FBA8E0232CEFD68E004A6566 /* TieLN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TieLN.png; sourceTree = "<group>"; };
+		FBA8E0242CEFD68E004A6566 /* SandCrawler.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SandCrawler.png; sourceTree = "<group>"; };
+		FBA8E0252CEFD68E004A6566 /* X34Land.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = X34Land.png; sourceTree = "<group>"; };
 		FBAF77382CE2682500F2B4FC /* PlanetasControladorPantalla.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetasControladorPantalla.swift; sourceTree = "<group>"; };
 		FBAF773B2CE2692E00F2B4FC /* ProveedorInfoPlanetas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProveedorInfoPlanetas.swift; sourceTree = "<group>"; };
 		FBAF773D2CE269FB00F2B4FC /* Planets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planets.swift; sourceTree = "<group>"; };
@@ -249,6 +329,10 @@
 		FB978BA22CDBD9720026A4A8 /* Imagenes */ = {
 			isa = PBXGroup;
 			children = (
+				FBA8E01B2CEFD669004A6566 /* ImgVehiculos */,
+				FBA8E0062CEFD429004A6566 /* ImgPlanetas */,
+				FBA8DFF12CEFCFC5004A6566 /* ImgNaves */,
+				FBA8DFDA2CEFCAF2004A6566 /* ImgEspecies */,
 				FB978BA32CDBD9850026A4A8 /* fondoEstrellas.jpg */,
 				FBD957B02CE41B6200F203AA /* BbyYoda.png */,
 				FBBB4B2C2CE7B1CE00D8CC58 /* BotonVerde.png */,
@@ -277,6 +361,74 @@
 				FB84C2112CDD7F5F00D810FE /* VistaInfoEspecies.swift */,
 			);
 			path = Especies;
+			sourceTree = "<group>";
+		};
+		FBA8DFDA2CEFCAF2004A6566 /* ImgEspecies */ = {
+			isa = PBXGroup;
+			children = (
+				FBA8DFE42CEFCB1A004A6566 /* babyyoda.png */,
+				FBA8DFE12CEFCB1A004A6566 /* Calamari.png */,
+				FBA8DFDE2CEFCB1A004A6566 /* Droide.png */,
+				FBA8DFDD2CEFCB1A004A6566 /* ewok.png */,
+				FBA8DFEF2CEFCEA3004A6566 /* Chuvaca.png */,
+				FBA8DFE32CEFCB1A004A6566 /* Humanos.png */,
+				FBA8DFE02CEFCB1A004A6566 /* Hutt.png */,
+				FBA8DFDB2CEFCB19004A6566 /* Rodian.png */,
+				FBA8DFDF2CEFCB1A004A6566 /* Sullstan.png */,
+				FBA8DFDC2CEFCB19004A6566 /* Tandoshan.png */,
+			);
+			path = ImgEspecies;
+			sourceTree = "<group>";
+		};
+		FBA8DFF12CEFCFC5004A6566 /* ImgNaves */ = {
+			isa = PBXGroup;
+			children = (
+				FBA8DFF22CEFCFFC004A6566 /* cr90Corvette.png */,
+				FBA8DFFB2CEFCFFC004A6566 /* EstrellaMuerte.png */,
+				FBA8DFF62CEFCFFC004A6566 /* Executer.png */,
+				FBA8DFF42CEFCFFC004A6566 /* Falcon.png */,
+				FBA8DFF92CEFCFFC004A6566 /* RebelTra.png */,
+				FBA8DFF72CEFCFFC004A6566 /* SentimelClassL.png */,
+				FBA8DFF82CEFCFFC004A6566 /* StarDestrpyer.png */,
+				FBA8DFFA2CEFCFFC004A6566 /* TieA1.png */,
+				FBA8DFF32CEFCFFC004A6566 /* Xwing.png */,
+				FBA8DFF52CEFCFFC004A6566 /* Ywing.png */,
+			);
+			name = ImgNaves;
+			sourceTree = "<group>";
+		};
+		FBA8E0062CEFD429004A6566 /* ImgPlanetas */ = {
+			isa = PBXGroup;
+			children = (
+				FBA8E0102CEFD43D004A6566 /* Alderaan.png */,
+				FBA8E00B2CEFD43D004A6566 /* Bespin.png */,
+				FBA8E00E2CEFD43D004A6566 /* Coruscant.png */,
+				FBA8E0092CEFD43D004A6566 /* Dagobah.png */,
+				FBA8E00A2CEFD43D004A6566 /* Endor.png */,
+				FBA8E00C2CEFD43D004A6566 /* Hoth.png */,
+				FBA8E00F2CEFD43D004A6566 /* Kamino.png */,
+				FBA8E0072CEFD43D004A6566 /* Naboo.png */,
+				FBA8E0082CEFD43D004A6566 /* Tatooine.png */,
+				FBA8E00D2CEFD43D004A6566 /* YavinIV.png */,
+			);
+			name = ImgPlanetas;
+			sourceTree = "<group>";
+		};
+		FBA8E01B2CEFD669004A6566 /* ImgVehiculos */ = {
+			isa = PBXGroup;
+			children = (
+				FBA8E01C2CEFD68D004A6566 /* Atat.png */,
+				FBA8E01F2CEFD68D004A6566 /* Atst.png */,
+				FBA8E0212CEFD68D004A6566 /* SailBarge.png */,
+				FBA8E0242CEFD68E004A6566 /* SandCrawler.png */,
+				FBA8E01D2CEFD68D004A6566 /* Snowspeeder.png */,
+				FBA8E01E2CEFD68D004A6566 /* StormIV.png */,
+				FBA8E0202CEFD68D004A6566 /* T16Sky.png */,
+				FBA8E0222CEFD68D004A6566 /* TieBomber.png */,
+				FBA8E0232CEFD68E004A6566 /* TieLN.png */,
+				FBA8E0252CEFD68E004A6566 /* X34Land.png */,
+			);
+			path = ImgVehiculos;
 			sourceTree = "<group>";
 		};
 		FBAF77372CE267E200F2B4FC /* Planetas */ = {
@@ -431,29 +583,69 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBA8DFE82CEFCB1A004A6566 /* Droide.png in Resources */,
 				FBD957C32CE41D1300F203AA /* Starjout.ttf in Resources */,
+				FBA8E0262CEFD68E004A6566 /* Atat.png in Resources */,
 				FBD957BF2CE41CE700F203AA /* Strjmono.ttf in Resources */,
+				FBA8E0192CEFD43D004A6566 /* Kamino.png in Resources */,
+				FBA8DFE72CEFCB1A004A6566 /* ewok.png in Resources */,
+				FBA8E0002CEFCFFC004A6566 /* Executer.png in Resources */,
 				FBBB4B2F2CE7B1D400D8CC58 /* BotonRojo.png in Resources */,
 				FBBB4B2B2CE7AF9900D8CC58 /* BotonAzul.png in Resources */,
 				FBD957C92CE420D100F203AA /* fondoEespecies.jpg in Resources */,
+				FBA8E0012CEFCFFC004A6566 /* SentimelClassL.png in Resources */,
+				FBA8E0042CEFCFFC004A6566 /* TieA1.png in Resources */,
 				FB978B7C2CDBD4700026A4A8 /* Assets.xcassets in Resources */,
+				FBA8DFE62CEFCB1A004A6566 /* Tandoshan.png in Resources */,
+				FBA8E02D2CEFD68E004A6566 /* TieLN.png in Resources */,
+				FBA8DFFD2CEFCFFC004A6566 /* Xwing.png in Resources */,
 				FBD957CB2CE424FD00F203AA /* PRUEBA.jpg in Resources */,
 				FB978B7F2CDBD4700026A4A8 /* Base in Resources */,
 				FBD957C12CE41CF800F203AA /* STJEDISE.TTF in Resources */,
+				FBA8DFEA2CEFCB1A004A6566 /* Hutt.png in Resources */,
 				FBD957B72CE41B6200F203AA /* Vehiculos.png in Resources */,
+				FBA8DFE92CEFCB1A004A6566 /* Sullstan.png in Resources */,
 				FBD957B52CE41B6200F203AA /* BbyYoda.png in Resources */,
+				FBA8E02C2CEFD68E004A6566 /* TieBomber.png in Resources */,
 				FBD957BE2CE41CE700F203AA /* Stjldbl1.ttf in Resources */,
+				FBA8E0032CEFCFFC004A6566 /* RebelTra.png in Resources */,
+				FBA8E02E2CEFD68E004A6566 /* SandCrawler.png in Resources */,
+				FBA8E0182CEFD43D004A6566 /* Coruscant.png in Resources */,
+				FBA8E0292CEFD68E004A6566 /* Atst.png in Resources */,
+				FBA8E0272CEFD68E004A6566 /* Snowspeeder.png in Resources */,
 				FBBB4B292CE7A78400D8CC58 /* Logo.png in Resources */,
+				FBA8E0052CEFCFFC004A6566 /* EstrellaMuerte.png in Resources */,
+				FBA8DFFE2CEFCFFC004A6566 /* Falcon.png in Resources */,
 				FB978BA42CDBD9850026A4A8 /* fondoEstrellas.jpg in Resources */,
 				FBBB4B312CE7B1DA00D8CC58 /* BotonMorado.png in Resources */,
+				FBA8DFE52CEFCB1A004A6566 /* Rodian.png in Resources */,
+				FBA8DFEE2CEFCB1A004A6566 /* babyyoda.png in Resources */,
+				FBA8E0282CEFD68E004A6566 /* StormIV.png in Resources */,
+				FBA8E0172CEFD43D004A6566 /* YavinIV.png in Resources */,
+				FBA8E02A2CEFD68E004A6566 /* T16Sky.png in Resources */,
 				FBBB4B2D2CE7B1CE00D8CC58 /* BotonVerde.png in Resources */,
 				FBD957BD2CE41CE700F203AA /* Stjldbl2.ttf in Resources */,
 				FB978B7A2CDBD4700026A4A8 /* Base in Resources */,
+				FBA8DFF02CEFCEA3004A6566 /* Chuvaca.png in Resources */,
 				FBD957B82CE41B6200F203AA /* especies.png in Resources */,
+				FBA8E02B2CEFD68E004A6566 /* SailBarge.png in Resources */,
 				FBBB4B372CE7B8B300D8CC58 /* BotonBack.png in Resources */,
+				FBA8E0022CEFCFFC004A6566 /* StarDestrpyer.png in Resources */,
+				FBA8E0142CEFD43D004A6566 /* Endor.png in Resources */,
 				FBD957B62CE41B6200F203AA /* Naves.png in Resources */,
+				FBA8DFFC2CEFCFFC004A6566 /* cr90Corvette.png in Resources */,
+				FBA8DFED2CEFCB1A004A6566 /* Humanos.png in Resources */,
+				FBA8E0152CEFD43D004A6566 /* Bespin.png in Resources */,
 				FBD957C62CE41D2200F203AA /* Starjedi.ttf in Resources */,
+				FBA8E01A2CEFD43D004A6566 /* Alderaan.png in Resources */,
+				FBA8E0162CEFD43D004A6566 /* Hoth.png in Resources */,
+				FBA8E0122CEFD43D004A6566 /* Tatooine.png in Resources */,
 				FBD957B42CE41B6200F203AA /* planetas.png in Resources */,
+				FBA8E0112CEFD43D004A6566 /* Naboo.png in Resources */,
+				FBA8DFEB2CEFCB1A004A6566 /* Calamari.png in Resources */,
+				FBA8E02F2CEFD68E004A6566 /* X34Land.png in Resources */,
+				FBA8DFFF2CEFCFFC004A6566 /* Ywing.png in Resources */,
+				FBA8E0132CEFD43D004A6566 /* Dagobah.png in Resources */,
 				FBD957C72CE41D2200F203AA /* Starjhol.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -4,8 +4,17 @@ class ControladorPantallaInfoEspecie: UIViewController {
     
     // Diccionario de imágenes, mapeando el nombre de la especie a una imagen
     let diccionarioDeImagenes: [String: UIImage] = [
-        "Human": UIImage(named: "BbyYoda.png")!
-        // Agrega más especies e imágenes aquí según sea necesario
+        "Human": UIImage(named: "Humanos.png")!,
+        "Droid": UIImage(named: "Droide.png")!,
+        "Wookie": UIImage(named: "Chuvaca.png")!,
+        "Rodian": UIImage(named: "Rodian.png")!,
+        "Hutt": UIImage(named: "Hutt.png")!,
+        "Yoda's species": UIImage(named: "babyyoda.png")!,
+        "Trandoshan": UIImage(named: "Tandoshan.png")!,
+        "Mon Calamari": UIImage(named: "Calamari.png")!,
+        "Ewok": UIImage(named: "ewok.png")!,
+        "Sullustan": UIImage(named: "Sullstan.png")!,
+        
     ]
     
     let proveedor_De_Informacion = proveedorDeInfromacion.autoreferencia  // Proveedor de información

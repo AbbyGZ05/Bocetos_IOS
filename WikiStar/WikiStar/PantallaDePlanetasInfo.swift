@@ -2,6 +2,21 @@ import UIKit
 
 class PantallaDePlanetasInfo: UIViewController{
     
+    // Diccionario de imágenes, mapeando el nombre de la especie a una imagen
+    let diccionarioDeImagenesPlanetas: [String: UIImage] = [
+        "Tatooine": UIImage(named: "Tatooine.png")!,
+        "Alderaan": UIImage(named: "Alderaan.png")!,
+        "Yavin IV": UIImage(named: "YavinIV.png")!,
+        "Hoth": UIImage(named: "Hoth.png")!,
+        "Bespin": UIImage(named: "Bespin.png")!,
+        "Endor": UIImage(named: "Endor.png")!,
+        "Naboo": UIImage(named: "Naboo.png")!,
+        "Coruscant": UIImage(named: "Coruscant.png")!,
+        "Kamino": UIImage(named: "Kamino.png")!,
+        "Dagobah": UIImage(named: "Dagobah.png")!,
+        
+    ]
+    
     let proveedor_De_Informacion_Planeta = ProveedorInfoPlanetas.autoreferencia  // Proveedor de información
     
     @IBOutlet weak var Nombre: UILabel!
@@ -13,7 +28,7 @@ class PantallaDePlanetasInfo: UIViewController{
     @IBOutlet weak var Terreno: UILabel!
     @IBOutlet weak var AWA: UILabel!
     @IBOutlet weak var Poblacion: UILabel!
-    
+    @IBOutlet weak var ImagenPlaneta: UIImageView!
     
     public var id_planeta: Int?
     public var planeta: Planetas?
@@ -83,5 +98,15 @@ class PantallaDePlanetasInfo: UIViewController{
         Terreno.text = planeta.terrain
         AWA.text = String(format: "%@%%", planeta.surface_water)
         Poblacion.text = String(format: "%@", planeta.population)
+        
+    // Usar el diccionario de imágenes para obtener y mostrar la imagen correspondiente
+    let nombrePlaneta = planeta.name
+    
+        if let imagen = diccionarioDeImagenesPlanetas[nombrePlaneta] {
+            ImagenPlaneta.image = imagen
+        } else {
+            // Si no se encuentra la imagen, muestra una imagen por defecto
+            ImagenPlaneta.image = UIImage(named: "imagen_por_defecto")
+        }
     }
 }
