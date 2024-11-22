@@ -17,6 +17,8 @@
 		FB1ED1F32CF0ED1F0052EA11 /* MonCalamari.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB1ED1F22CF0ED1F0052EA11 /* MonCalamari.mp3 */; };
 		FB1ED1F52CF0EDB50052EA11 /* Ewok.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB1ED1F42CF0EDB50052EA11 /* Ewok.mp3 */; };
 		FB1ED1F72CF0EF430052EA11 /* Sullstan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB1ED1F62CF0EF430052EA11 /* Sullstan.mp3 */; };
+		FB1ED1FB2CF0FB2C0052EA11 /* BotonNext.png in Resources */ = {isa = PBXBuildFile; fileRef = FB1ED1FA2CF0FB2C0052EA11 /* BotonNext.png */; };
+		FB1ED1FD2CF0FD710052EA11 /* MicrosoftTeams-image (1).png in Resources */ = {isa = PBXBuildFile; fileRef = FB1ED1FC2CF0FD710052EA11 /* MicrosoftTeams-image (1).png */; };
 		FB5F60C12CEE4280002206A5 /* prueba.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5F60C02CEE4280002206A5 /* prueba.swift */; };
 		FB5F60C32CEE4C36002206A5 /* EstiloBarra.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5F60C22CEE4C36002206A5 /* EstiloBarra.swift */; };
 		FB84C2082CDD697F00D810FE /* VistaDeCeldaEspecies.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB84C2072CDD697F00D810FE /* VistaDeCeldaEspecies.swift */; };
@@ -141,6 +143,8 @@
 		FB1ED1F22CF0ED1F0052EA11 /* MonCalamari.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MonCalamari.mp3; sourceTree = "<group>"; };
 		FB1ED1F42CF0EDB50052EA11 /* Ewok.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ewok.mp3; sourceTree = "<group>"; };
 		FB1ED1F62CF0EF430052EA11 /* Sullstan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sullstan.mp3; sourceTree = "<group>"; };
+		FB1ED1FA2CF0FB2C0052EA11 /* BotonNext.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BotonNext.png; path = ../../../../Downloads/BotonNext.png; sourceTree = "<group>"; };
+		FB1ED1FC2CF0FD710052EA11 /* MicrosoftTeams-image (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MicrosoftTeams-image (1).png"; sourceTree = "<group>"; };
 		FB5F60C02CEE4280002206A5 /* prueba.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prueba.swift; sourceTree = "<group>"; };
 		FB5F60C22CEE4C36002206A5 /* EstiloBarra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstiloBarra.swift; sourceTree = "<group>"; };
 		FB84C2072CDD697F00D810FE /* VistaDeCeldaEspecies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaDeCeldaEspecies.swift; sourceTree = "<group>"; };
@@ -367,6 +371,7 @@
 		FB978BA22CDBD9720026A4A8 /* Imagenes */ = {
 			isa = PBXGroup;
 			children = (
+				FB1ED1FC2CF0FD710052EA11 /* MicrosoftTeams-image (1).png */,
 				FBA8E01B2CEFD669004A6566 /* ImgVehiculos */,
 				FBA8E0062CEFD429004A6566 /* ImgPlanetas */,
 				FBA8DFF12CEFCFC5004A6566 /* ImgNaves */,
@@ -374,6 +379,7 @@
 				FB978BA32CDBD9850026A4A8 /* fondoEstrellas.jpg */,
 				FBD957B02CE41B6200F203AA /* BbyYoda.png */,
 				FBBB4B2C2CE7B1CE00D8CC58 /* BotonVerde.png */,
+				FB1ED1FA2CF0FB2C0052EA11 /* BotonNext.png */,
 				FBBB4B282CE7A78400D8CC58 /* Logo.png */,
 				FBD957C82CE420D100F203AA /* fondoEespecies.jpg */,
 				FBD957CA2CE424FD00F203AA /* PRUEBA.jpg */,
@@ -638,6 +644,7 @@
 				FB978B7C2CDBD4700026A4A8 /* Assets.xcassets in Resources */,
 				FBA8DFE62CEFCB1A004A6566 /* Tandoshan.png in Resources */,
 				FBA8E02D2CEFD68E004A6566 /* TieLN.png in Resources */,
+				FB1ED1FD2CF0FD710052EA11 /* MicrosoftTeams-image (1).png in Resources */,
 				FBA8DFFD2CEFCFFC004A6566 /* Xwing.png in Resources */,
 				FBD957CB2CE424FD00F203AA /* PRUEBA.jpg in Resources */,
 				FB978B7F2CDBD4700026A4A8 /* Base in Resources */,
@@ -646,6 +653,7 @@
 				FB1ED1F12CF0ECB20052EA11 /* Trandoshan.mp3 in Resources */,
 				FBD957B72CE41B6200F203AA /* Vehiculos.png in Resources */,
 				FBA8DFE92CEFCB1A004A6566 /* Sullstan.png in Resources */,
+				FB1ED1FB2CF0FB2C0052EA11 /* BotonNext.png in Resources */,
 				FBD957B52CE41B6200F203AA /* BbyYoda.png in Resources */,
 				FBA8E02C2CEFD68E004A6566 /* TieBomber.png in Resources */,
 				FBD957BE2CE41CE700F203AA /* Stjldbl1.ttf in Resources */,
