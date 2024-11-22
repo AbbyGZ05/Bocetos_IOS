@@ -1,4 +1,6 @@
 import UIKit
+import AVFoundation
+
 
 class ControladorPantallaInfoEspecie: UIViewController {
     
@@ -17,6 +19,20 @@ class ControladorPantallaInfoEspecie: UIViewController {
         
     ]
     
+    // Diccionario de audios
+    let diccionarioDeAudios: [String: String] = [
+        "Human": "Human.mp3",
+        "Droid": "Droid.mp3",
+        "Wookie": "Chuvaca.mp3",
+        "Rodian": "Rodian.mp3",
+        "Hutt": "Hutt.mp3",
+        "Yoda's species": "Yoda.mp3",
+        "Trandoshan": "Tandoshan.mp3",
+        "Mon Calamari": "MonCalamari.mp3",
+        "Ewok": "Ewok.mp3",
+        "Sullustan": "Sullstan.mp3"
+    ]
+    
     let proveedor_De_Informacion = proveedorDeInfromacion.autoreferencia  // Proveedor de información
 
     @IBOutlet weak var Nombre: UILabel!
@@ -25,12 +41,18 @@ class ControladorPantallaInfoEspecie: UIViewController {
     @IBOutlet weak var Lenguaje: UILabel!
     @IBOutlet weak var Origen: UILabel!
     @IBOutlet weak var imagenEspecie: UIImageView!
+    @IBOutlet weak var botonReproducirAudio: UIButton!
     
     public var id_especie: Int?
     public var especie: Especies?
+    public var audioPlayer: AVAudioPlayer?
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        botonReproducirAudio.addTarget(self, action: #selector(reproducirAudio), for: .touchUpInside)
+        
         
         // Aseguramos que el controlador de navegación tiene la barra activada
         let controlador_de_navegacion = self.navigationController as? mod_navegador_principal
@@ -143,6 +165,26 @@ class ControladorPantallaInfoEspecie: UIViewController {
         }
         
         task.resume()
+    }
+    
+    @objc func reproducirAudio() {
+        guard let nombreEspecie = self.especie?.name else { return }
+
+        // Verificar si existe un archivo de audio para la especie
+        if let nombreArchivoAudio = diccionarioDeAudios[nombreEspecie],
+           let rutaAudio = Bundle.main.path(forResource: nombreArchivoAudio, ofType: nil) {
+            
+            let urlAudio = URL(fileURLWithPath: rutaAudio)
+            
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: urlAudio)
+                audioPlayer?.play()  // Reproducir el audio
+            } catch {
+                print("Error al reproducir el audio: \(error.localizedDescription)")
+            }
+        } else {
+            print("No se encontró un audio para la especie: \(nombreEspecie)")
+        }
     }
 }
 

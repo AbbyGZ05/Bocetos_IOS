@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB1ED1E52CF0E9120052EA11 /* Human.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB1ED1E42CF0E9120052EA11 /* Human.mp3 */; };
+		FB1ED1E72CF0E91A0052EA11 /* Droid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB1ED1E62CF0E9190052EA11 /* Droid.mp3 */; };
+		FB1ED1E92CF0EAD80052EA11 /* Rodian.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB1ED1E82CF0EAD80052EA11 /* Rodian.mp3 */; };
+		FB1ED1EB2CF0EAE40052EA11 /* Chuvaca.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB1ED1EA2CF0EAE40052EA11 /* Chuvaca.mp3 */; };
+		FB1ED1ED2CF0EB450052EA11 /* Hutt.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB1ED1EC2CF0EB450052EA11 /* Hutt.mp3 */; };
+		FB1ED1EF2CF0EBFD0052EA11 /* Yoda.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB1ED1EE2CF0EBFD0052EA11 /* Yoda.mp3 */; };
+		FB1ED1F12CF0ECB20052EA11 /* Trandoshan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB1ED1F02CF0ECB20052EA11 /* Trandoshan.mp3 */; };
+		FB1ED1F32CF0ED1F0052EA11 /* MonCalamari.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB1ED1F22CF0ED1F0052EA11 /* MonCalamari.mp3 */; };
+		FB1ED1F52CF0EDB50052EA11 /* Ewok.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB1ED1F42CF0EDB50052EA11 /* Ewok.mp3 */; };
+		FB1ED1F72CF0EF430052EA11 /* Sullstan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB1ED1F62CF0EF430052EA11 /* Sullstan.mp3 */; };
 		FB5F60C12CEE4280002206A5 /* prueba.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5F60C02CEE4280002206A5 /* prueba.swift */; };
 		FB5F60C32CEE4C36002206A5 /* EstiloBarra.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5F60C22CEE4C36002206A5 /* EstiloBarra.swift */; };
 		FB84C2082CDD697F00D810FE /* VistaDeCeldaEspecies.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB84C2072CDD697F00D810FE /* VistaDeCeldaEspecies.swift */; };
@@ -121,6 +131,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB1ED1E42CF0E9120052EA11 /* Human.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Human.mp3; sourceTree = "<group>"; };
+		FB1ED1E62CF0E9190052EA11 /* Droid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Droid.mp3; sourceTree = "<group>"; };
+		FB1ED1E82CF0EAD80052EA11 /* Rodian.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Rodian.mp3; sourceTree = "<group>"; };
+		FB1ED1EA2CF0EAE40052EA11 /* Chuvaca.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Chuvaca.mp3; sourceTree = "<group>"; };
+		FB1ED1EC2CF0EB450052EA11 /* Hutt.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Hutt.mp3; sourceTree = "<group>"; };
+		FB1ED1EE2CF0EBFD0052EA11 /* Yoda.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Yoda.mp3; sourceTree = "<group>"; };
+		FB1ED1F02CF0ECB20052EA11 /* Trandoshan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Trandoshan.mp3; sourceTree = "<group>"; };
+		FB1ED1F22CF0ED1F0052EA11 /* MonCalamari.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MonCalamari.mp3; sourceTree = "<group>"; };
+		FB1ED1F42CF0EDB50052EA11 /* Ewok.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ewok.mp3; sourceTree = "<group>"; };
+		FB1ED1F62CF0EF430052EA11 /* Sullstan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sullstan.mp3; sourceTree = "<group>"; };
 		FB5F60C02CEE4280002206A5 /* prueba.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prueba.swift; sourceTree = "<group>"; };
 		FB5F60C22CEE4C36002206A5 /* EstiloBarra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstiloBarra.swift; sourceTree = "<group>"; };
 		FB84C2072CDD697F00D810FE /* VistaDeCeldaEspecies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaDeCeldaEspecies.swift; sourceTree = "<group>"; };
@@ -246,6 +266,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB1ED1DF2CF0E7320052EA11 /* Audios */ = {
+			isa = PBXGroup;
+			children = (
+				FB1ED1F62CF0EF430052EA11 /* Sullstan.mp3 */,
+				FB1ED1F42CF0EDB50052EA11 /* Ewok.mp3 */,
+				FB1ED1F22CF0ED1F0052EA11 /* MonCalamari.mp3 */,
+				FB1ED1F02CF0ECB20052EA11 /* Trandoshan.mp3 */,
+				FB1ED1EE2CF0EBFD0052EA11 /* Yoda.mp3 */,
+				FB1ED1EC2CF0EB450052EA11 /* Hutt.mp3 */,
+				FB1ED1EA2CF0EAE40052EA11 /* Chuvaca.mp3 */,
+				FB1ED1E82CF0EAD80052EA11 /* Rodian.mp3 */,
+				FB1ED1E62CF0E9190052EA11 /* Droid.mp3 */,
+				FB1ED1E42CF0E9120052EA11 /* Human.mp3 */,
+			);
+			path = Audios;
+			sourceTree = "<group>";
+		};
 		FB84C20B2CDD7B9F00D810FE /* Estilos */ = {
 			isa = PBXGroup;
 			children = (
@@ -290,6 +327,7 @@
 		FB978B712CDBD4700026A4A8 /* WikiStar */ = {
 			isa = PBXGroup;
 			children = (
+				FB1ED1DF2CF0E7320052EA11 /* Audios */,
 				FBD957B92CE41CB600F203AA /* Tipos */,
 				FBD9577C2CE4096200F203AA /* Naves */,
 				FBD957702CE3F9F200F203AA /* Vehiculos */,
@@ -592,9 +630,11 @@
 				FBA8E0002CEFCFFC004A6566 /* Executer.png in Resources */,
 				FBBB4B2F2CE7B1D400D8CC58 /* BotonRojo.png in Resources */,
 				FBBB4B2B2CE7AF9900D8CC58 /* BotonAzul.png in Resources */,
+				FB1ED1F32CF0ED1F0052EA11 /* MonCalamari.mp3 in Resources */,
 				FBD957C92CE420D100F203AA /* fondoEespecies.jpg in Resources */,
 				FBA8E0012CEFCFFC004A6566 /* SentimelClassL.png in Resources */,
 				FBA8E0042CEFCFFC004A6566 /* TieA1.png in Resources */,
+				FB1ED1EB2CF0EAE40052EA11 /* Chuvaca.mp3 in Resources */,
 				FB978B7C2CDBD4700026A4A8 /* Assets.xcassets in Resources */,
 				FBA8DFE62CEFCB1A004A6566 /* Tandoshan.png in Resources */,
 				FBA8E02D2CEFD68E004A6566 /* TieLN.png in Resources */,
@@ -603,6 +643,7 @@
 				FB978B7F2CDBD4700026A4A8 /* Base in Resources */,
 				FBD957C12CE41CF800F203AA /* STJEDISE.TTF in Resources */,
 				FBA8DFEA2CEFCB1A004A6566 /* Hutt.png in Resources */,
+				FB1ED1F12CF0ECB20052EA11 /* Trandoshan.mp3 in Resources */,
 				FBD957B72CE41B6200F203AA /* Vehiculos.png in Resources */,
 				FBA8DFE92CEFCB1A004A6566 /* Sullstan.png in Resources */,
 				FBD957B52CE41B6200F203AA /* BbyYoda.png in Resources */,
@@ -624,14 +665,19 @@
 				FBA8E0172CEFD43D004A6566 /* YavinIV.png in Resources */,
 				FBA8E02A2CEFD68E004A6566 /* T16Sky.png in Resources */,
 				FBBB4B2D2CE7B1CE00D8CC58 /* BotonVerde.png in Resources */,
+				FB1ED1E72CF0E91A0052EA11 /* Droid.mp3 in Resources */,
+				FB1ED1E92CF0EAD80052EA11 /* Rodian.mp3 in Resources */,
 				FBD957BD2CE41CE700F203AA /* Stjldbl2.ttf in Resources */,
 				FB978B7A2CDBD4700026A4A8 /* Base in Resources */,
+				FB1ED1F52CF0EDB50052EA11 /* Ewok.mp3 in Resources */,
 				FBA8DFF02CEFCEA3004A6566 /* Chuvaca.png in Resources */,
 				FBD957B82CE41B6200F203AA /* especies.png in Resources */,
+				FB1ED1ED2CF0EB450052EA11 /* Hutt.mp3 in Resources */,
 				FBA8E02B2CEFD68E004A6566 /* SailBarge.png in Resources */,
 				FBBB4B372CE7B8B300D8CC58 /* BotonBack.png in Resources */,
 				FBA8E0022CEFCFFC004A6566 /* StarDestrpyer.png in Resources */,
 				FBA8E0142CEFD43D004A6566 /* Endor.png in Resources */,
+				FB1ED1F72CF0EF430052EA11 /* Sullstan.mp3 in Resources */,
 				FBD957B62CE41B6200F203AA /* Naves.png in Resources */,
 				FBA8DFFC2CEFCFFC004A6566 /* cr90Corvette.png in Resources */,
 				FBA8DFED2CEFCB1A004A6566 /* Humanos.png in Resources */,
@@ -639,12 +685,14 @@
 				FBD957C62CE41D2200F203AA /* Starjedi.ttf in Resources */,
 				FBA8E01A2CEFD43D004A6566 /* Alderaan.png in Resources */,
 				FBA8E0162CEFD43D004A6566 /* Hoth.png in Resources */,
+				FB1ED1E52CF0E9120052EA11 /* Human.mp3 in Resources */,
 				FBA8E0122CEFD43D004A6566 /* Tatooine.png in Resources */,
 				FBD957B42CE41B6200F203AA /* planetas.png in Resources */,
 				FBA8E0112CEFD43D004A6566 /* Naboo.png in Resources */,
 				FBA8DFEB2CEFCB1A004A6566 /* Calamari.png in Resources */,
 				FBA8E02F2CEFD68E004A6566 /* X34Land.png in Resources */,
 				FBA8DFFF2CEFCFFC004A6566 /* Ywing.png in Resources */,
+				FB1ED1EF2CF0EBFD0052EA11 /* Yoda.mp3 in Resources */,
 				FBA8E0132CEFD43D004A6566 /* Dagobah.png in Resources */,
 				FBD957C72CE41D2200F203AA /* Starjhol.ttf in Resources */,
 			);
