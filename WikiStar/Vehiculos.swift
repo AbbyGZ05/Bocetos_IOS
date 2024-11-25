@@ -9,7 +9,7 @@ import Foundation
 
 struct Vehiculos: Codable{
     
-    let id : Int?
+    //let id : Int?
     var name : String
     var model: String
     var cost_in_credits : String
@@ -21,6 +21,7 @@ struct Vehiculos: Codable{
     var vehicle_class : String
     
 }
+
 struct VehiculosRespuesta: Codable {
         let count: Int
         let next: String?

@@ -1,5 +1,3 @@
-
-
 //
 //  controladorPantallaPrincipalDeColeccion.swift
 //  Boceto_02
@@ -9,29 +7,35 @@
 
 import UIKit
 
-
-
+// Controlador para la pantalla principal de la colección de naves espaciales.
 class NavesControladorPantalla: UICollectionViewController {
     
+    // Array que almacenará las naves descargadas desde la API
     private var lista_de_naves: [Naves] = []
     
+    // Identificador de la celda que se usará en el UICollectionView
     private let IdentificadorDeCeldaNave = "PantallaDeNavesLista"
+    
+    // URL base de la API para obtener los datos de las naves
     private let url_api = "https://swapi.dev/api/starships/"
     
-    
+    // Este método se llama cuando la vista está completamente cargada
     override func viewDidLoad() {
         super.viewDidLoad()
- 
         
+        // Llamada para obtener las naves desde la API
         ProveedorInfoNaves.autoreferencia
             .obtener_naves(que_hacer_al_recibir: {[weak self] (naves_descargadas) in
+                // Guardar las naves descargadas en el array
                 self?.lista_de_naves = naves_descargadas
+                
+                // Recargar la colección en el hilo principal
                 DispatchQueue.main.async {
                     self?.collectionView.reloadData()
                 }
             })
         
-        // Personalizar la barra de navegación
+        // Personalización de la barra de navegación
         self.navigationController?.navigationBar.barTintColor = .black
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         
@@ -49,7 +53,7 @@ class NavesControladorPantalla: UICollectionViewController {
         // Establecer el botón de retroceso en la barra de navegación
         navigationItem.leftBarButtonItem = backButton
         
-        // Crear un botón 'More' en el lado der
+        // Crear un botón 'More' en el lado derecho
         let moreButton = UIBarButtonItem(
             title: "More >",
             style: .plain,
@@ -61,116 +65,87 @@ class NavesControladorPantalla: UICollectionViewController {
         navigationItem.rightBarButtonItems = [moreButton, backButton]  // Añadir 'More' antes de 'Back'
     }
     
-           
-           // Acción del botón de retroceso
-           @objc func backButtonTapped() {
-              
-               navigationController?.popViewController(animated: true)
-           }
+    // Acción del botón de retroceso
+    @objc func backButtonTapped() {
+        // Volver a la pantalla anterior
+        navigationController?.popViewController(animated: true)
+    }
     
     // Acción para el botón 'More'
     @objc func moreButtonTapped() {
-        // Aquí se navega a la pantalla 'More', si tienes un controlador con ese identificador.
+        // Navegar a la pantalla 'More', si tienes un controlador con ese identificador
         if let moreScreen = storyboard?.instantiateViewController(withIdentifier: "More") {
             // Navegar a la pantalla 'More'
             self.navigationController?.pushViewController(moreScreen, animated: true)
         }
     }
 
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using [segue destinationViewController].
-     // Pass the selected object to the new view controller.
-     }
-     */
+    // MARK: - Métodos de UICollectionViewDataSource
     
-    // MARK: UICollectionViewDataSource
-    
+    // Definir el número de secciones (en este caso solo una sección)
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        //Imprime el simeroo de secciones que haya en la lista
         return 1
     }
     
-    
+    // Definir el número de elementos en la sección (el número de naves)
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
         return self.lista_de_naves.count
     }
     
-    //funcion para identificar y crear cada una de las  celdas en el controlaodr
-    
+    // Configuración de cada celda para mostrar la información de cada nave
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        // Dequeue la celda reutilizable
         let celda: VistaDeCeldaNaves = collectionView.dequeueReusableCell(withReuseIdentifier: IdentificadorDeCeldaNave, for: indexPath) as! VistaDeCeldaNaves
-
-        //celda.etiquetaPlaneta.text = self.lista_de_planetas[indexPath.item].name
+        
+        // Asignar el nombre de la nave a la celda
         celda.etiquetaNaves.text = self.lista_de_naves[indexPath.item].name
         print(self.lista_de_naves[indexPath.item].name)
-
-
-        
         
         return celda
     }
+    
+    // Acción cuando una celda es seleccionada
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("Se selecciono la celda\(indexPath)")
-
-                
-                //print(self.navigationController)
+        print("Se seleccionó la celda \(indexPath)")
         
-        if let pantalla_de_naves = storyboard?.instantiateViewController(withIdentifier: "PantallaDeNavesInfo") as? PantallaDeNavesInfo{
-            // Asegúrate de que 'id_especie' se pase correctamente
-            // Si tienes un array o una lista de especies, deberías pasar el 'id' correcto
-            // Aquí asumo que 'indexPath.item' es el índice de un arreglo de especies, si es necesario
-            pantalla_de_naves.id_nave = indexPath.item  // O usa el valor de especie adecuado
+        // Instanciar el controlador de vista para mostrar la información de la nave seleccionada
+        if let pantalla_de_naves = storyboard?.instantiateViewController(withIdentifier: "PantallaDeNavesInfo") as? PantallaDeNavesInfo {
+            // Pasar el id de la nave seleccionada a la siguiente pantalla
+            pantalla_de_naves.id_nave = indexPath.item  // O usa el valor adecuado para la nave
             self.navigationController?.pushViewController(pantalla_de_naves, animated: true)
         } else {
-            print("No se pudo encontrar el controlador de vista con el identificador 'PantallaDenavesInfo'")
+            print("No se pudo encontrar el controlador de vista con el identificador 'PantallaDeNavesInfo'")
         }
-
     }
     
- /* override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("Se seleciono la celda \(indexPath)")
-        
-        let Pantalla_Info_Especie = storyboard?.instantiateViewController(withIdentifier: "PantallaDeEspeciesInfo") as! ControladorPantallaInfoEspecie
-                
-                self.navigationController?.pushViewController(Pantalla_Info_Especie, animated: true)
-                
-                print(self.navigationController)*/
+    // MARK: - Métodos opcionales de UICollectionViewDelegate
+    
+    /*
+    // Descomenta este método si deseas especificar si un ítem debe ser resaltado durante el seguimiento
+    override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
+        return true
     }
-    // MARK: UICollectionViewDelegate
+    */
     
     /*
-     // Uncomment this method to specify if the specified item should be highlighted during tracking
-     override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
-     return true
-     }
-     */
+    // Descomenta este método si deseas especificar si un ítem debe ser seleccionado
+    override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    */
     
     /*
-     // Uncomment this method to specify if the specified item should be selected
-     override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
-     return true
-     }
-     */
+    // Descomenta estos métodos si deseas especificar si se debe mostrar un menú de acciones para el ítem
+    override func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool {
+        return false
+    }
     
-    /*
-     // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-     override func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool {
-     return false
-     }
-     
-     override func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
-     return false
-     }
-     
-     override func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
-     
-     }
-     */
+    override func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
+        return false
+    }
     
+    override func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
+    }
+    */
+}
 

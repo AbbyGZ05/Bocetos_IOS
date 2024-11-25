@@ -279,9 +279,9 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Naves" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJt-rX-oR4">
-                                            <rect key="frame" x="-0.66666666666662877" y="0.0" width="300" height="100"/>
+                                            <rect key="frame" x="8" y="0.0" width="284" height="100"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" name="Starjedi" family="Starjedi" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="Starjedi" family="Starjedi" pointSize="18"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="highlightedColor" systemColor="systemPinkColor"/>
                                         </label>
@@ -302,7 +302,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LLG-6T-KDY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="13" y="2118"/>
+            <point key="canvasLocation" x="12.977099236641221" y="2117.605633802817"/>
         </scene>
         <!--Pantalla De Naves Info-->
         <scene sceneID="Iyi-VL-D42">
@@ -592,10 +592,10 @@
             </objects>
             <point key="canvasLocation" x="904.58015267175574" y="104.92957746478874"/>
         </scene>
-        <!--View Controller-->
+        <!--Prueba-->
         <scene sceneID="u2f-zB-BzX">
             <objects>
-                <viewController storyboardIdentifier="More" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lib-yg-tGE" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="More" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lib-yg-tGE" customClass="prueba" customModule="WikiStar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="More" id="g02-Cu-6wF">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -611,7 +611,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2RC-AU-INb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1600.7633587786258" y="104.92957746478874"/>
+            <point key="canvasLocation" x="1799" y="105"/>
         </scene>
         <!--Pantalla De Planetas Info-->
         <scene sceneID="Jr2-pj-cOw">
@@ -972,16 +972,16 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBrownColor">
-            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

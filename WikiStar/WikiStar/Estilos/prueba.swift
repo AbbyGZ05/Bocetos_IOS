@@ -7,7 +7,8 @@
 
 import UIKit
 
-class prueba: UICollectionViewController{
+class prueba: UIViewController{
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Personalizar la barra de navegación
